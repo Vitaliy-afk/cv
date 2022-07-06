@@ -8,12 +8,84 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <wrapper>
+    <div id="wrapper">
         <header>
-            <div class="container">
-                <h1>HTML5 Семантичні елементи</h1>
-            </div>
+            <h1>HTML5 Семантичні елементи</h1>
         </header>
-    </wrapper>
+        <div>
+            <p>Семантичний елемент чітко описує його значення як для браузера, так і для розробника.</p>
+            <p>Приклади не семантичних елементів: &lt;div&lt; і &lt;span&lt;- нічого не говорить про його вміст.</p>
+            <p>Приклади семантичних елементів: &lt;form&lt;, &lt;table&lt; і &lt;darticle&lt;- чітко визначає його зміст.</p>
+        </div>
+        <section class="browsers">
+            <span>Підтримка браузерів</span>
+            <ul class="browsers__list">
+                <li class="browsers-img">
+                    <img src="./assets/image/chrome.png" alt="brow-image">
+                </li>
+                <li class="browsers-img">
+                    <img src="./assets/image/edge.png" alt="brow-image">
+                </li>
+                <li class="browsers-img">
+                    <img src="./assets/image/mozilla.png" alt="brow-image">
+                </li>
+                <li class="browsers-img">
+                    <img src="./assets/image/safari.png" alt="brow-image">
+                </li>
+                <li class="browsers-img">
+                    <img src="./assets/image/opera.png" alt="brow-image">
+                </li>
+            </ul>
+            <span>
+                Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.
+            </span>
+            <br>
+            <p>Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі елементи".</p>
+            <div>Прочитайте про це в 
+                <a href="https://accounts.google.com/ServiceLogin/webreauth?service=blogger&passive=1209600&continue=https%3A%2F%2Fwww.blogger.com%2Fblog%2Fpage%2Fedit%2F2590532390801722394%2F850003172824707311&followup=https%3A%2F%2Fwww.blogger.com%2Fblog%2Fpage%2Fedit%2F2590532390801722394%2F850003172824707311&flowName=GlifWebSignIn&flowEntry=ServiceLogin">підтримці браузера HTML5.</a>
+            </div>
+        </section>
+        <section class="new-elements">
+            <h3>HTML5 пропонує нові семантичні елементи для визначення різних частин веб-сторінки:</h3>
+            <ul>
+                <li>&lt;section&lt;</li>
+                <li>&lt;article&lt;</li>
+                <li>&lt;header&lt;</li>
+                <li>&lt;footer&lt;</li>
+            </ul>
+
+        </section>
+        <section class="section-el">
+            <p>Елемент &lt;section&lt; визначає розділ в документі.</p>
+            <p>Згідно з документацією в3к'с HTML5: "розділ представляє собою тематичну угруповання контенту, зазвичай з заголовком".</p>
+            <p>Домашня сторінка зазвичай може бути розділена на розділи для ознайомлення, змісту і контактної інформації.</p>
+            <div>
+                <img src="./assets/image/scr-sec.png" alt="scr">
+            </div>
+        </section>
+        <section class="article-el">
+            <p>Елемент &lt;article&lt;визначає незалежний, автономний вміст.</p>
+            <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість читати його незалежно від іншої частини веб-сайту.</p>
+            <p>Приклади того, де можна використовувати елемент &lt;article&lt;:</p>
+            <ul>
+                <li>Повідомлення на форумі</li>
+                <li>блозі</li>
+                <li>Газетна стаття</li>
+            </ul>
+            <div>
+                <img src="./assets/image/scr-art.png" alt="scr">
+            </div>
+        </section>
+        <section class="header-el">
+            <p>Елемент &lt;header&lt;задає заголовок для документа або розділу.</p>
+            <p>Елемент &lt;header&lt;повинен використовуватися в якості контейнера для вступного змісту.</p>
+            <p>В одному документі може бути кілька елементів &lt;header&lt;.</p>
+            <p>У наступному прикладі визначається заголовок для статті:</p>
+            <div>
+                <img src="./assets/image/head-art.png">
+            </div>
+        </section>
+    </div>
+   
 </body>
 </html>
