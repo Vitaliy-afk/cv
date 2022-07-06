@@ -26,11 +26,49 @@ $media-expressions: (
 
 
 
+ul {
+	padding-left: 35px;
+}
+div {
+	font-size: 18px;
+	
+	
+	p {
+		margin-bottom: 10px;
+		
+		
+	}
+	span {
+		transform: translateY(0.1em);
+		display: inline-block;
+		
+	}
+}
+
+span {
+	transform: translate(120px, 50%);
+}
+
+mark {
+	background: none;
+	font-weight: bold;
+
+}
+
+section, header {
+	padding-bottom: 50px;
+}
+
+h4 {
+	font-size: 30px;
+}
+
 .browsers {
 	ul {
 		@extend %listreset;
 		display: flex;
 		align-items: center;
+		padding-left: 0;
 		li {
 			&:not(:last-child){
 				padding-right: 5px;
@@ -45,6 +83,3 @@ $media-expressions: (
 }
 
 
-.new-elements {
-	
-}
