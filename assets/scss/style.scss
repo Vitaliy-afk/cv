@@ -46,6 +46,7 @@ div {
 				display: block;
 				text-decoration: none;
 				transition: background 0.4s ease-in-out;
+				border-radius: 30px;
 				&:hover {
 					text-decoration: underline;
 					background: rgb(16, 45, 83);

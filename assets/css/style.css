@@ -8,8 +8,6 @@
           box-sizing: border-box;
   overflow: hidden;
   font-family: "Montserrat";
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .container {
@@ -492,6 +490,7 @@ div ul li a {
   -webkit-transition: background 0.4s ease-in-out;
   -o-transition: background 0.4s ease-in-out;
   transition: background 0.4s ease-in-out;
+  border-radius: 30px;
 }
 div ul li a:hover {
   text-decoration: underline;
