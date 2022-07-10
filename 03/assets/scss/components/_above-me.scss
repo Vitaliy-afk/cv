@@ -1,0 +1,30 @@
+.about-me {
+    padding: 95px 0 98px 0;
+    background: #F6F6F6;
+    .container {
+        header {
+            h3 {
+
+            }
+        }
+        .text {
+            text-align: center;
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 43px 0 0 0;
+           
+            p {
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                text-align: center;
+                color: #070707;
+                &:not(:last-child){
+                    padding-bottom: 30px;
+                }
+            }
+        }
+    }
+}

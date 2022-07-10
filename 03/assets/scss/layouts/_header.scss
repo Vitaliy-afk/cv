@@ -1,0 +1,42 @@
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+	z-index: 1000;
+    padding: 30px 0 25px 0;
+    border-bottom: 1px solid #828282;
+
+    .container {
+        max-width: 540px;
+        .head-menu {
+            
+            ul {
+                @extend %listreset;
+                display: flex;
+                justify-content: center;
+                li {
+                    a {
+                        font-family: 'Open Sans';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 25px;
+                        letter-spacing: 0.02em;
+                        color: #070707;
+                        text-decoration: none;
+                    }
+                }
+                li {
+                    &:not(:last-child){
+                        padding-right: 41px;
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}
+

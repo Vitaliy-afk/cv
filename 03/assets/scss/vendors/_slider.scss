@@ -1,0 +1,290 @@
+.testimonials {
+    padding: 0 0 18px 0px;
+    .container {
+        max-width: 1130px;
+        .p {
+            text-transform: uppercase;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 17px;
+            color: #3734A9;
+            p {
+                padding-bottom: 10px;
+            }
+
+        }
+        h2 {
+            max-width: 324px;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 37px;
+            line-height: 48px;
+            letter-spacing: -0.03em;
+            color: #000000;
+            padding-bottom: 32px;
+
+        }
+        .slider {
+            padding-bottom: 100px;
+            .slider-block {
+                .slider-row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 -70px;
+                    .slider-item {
+                       
+                        padding: 0 70px;
+                        &.img {
+                            position: relative;
+                            max-width: 55%;
+                            
+                            // &::before {
+                            //     content: "";
+                            //     background-image: url('/assets/img/z.png');
+                            //     background-size: contain;
+                            //     position: absolute;
+                            //     width: 65px;
+                            //     height: 65px;
+                            //     background-repeat: no-repeat;
+                            //     top: 38%;
+                            //     right: 7%;
+                            // }
+                            // &::after {
+                            //     content: "";
+                            //     position: absolute;
+                            //     background-image: url('/assets/img/slider-logo.png');
+                            //     width: 188px;
+                            //     height: 38.56px;
+                            //     background-repeat: no-repeat;
+                            //     left: 80px;
+                            //     background-size: cover;
+                            //     bottom: 25px;
+                            // }
+                            figure {
+                                margin: 0;
+                                width: 600px;
+                                height: 345px;
+                                
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 10px;
+                                }
+                            }
+                            div + div {
+                                margin-top: -163px;
+                                > figure {
+                                    height: 100%;
+                                    > img {
+                                        // height: 170px;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            div + div + div {
+                                figure {
+                                    margin: 0 0 0 562px;
+                                    transform: translate(0px, -42px);
+                                    img {
+                                        background-size: contain;
+                                        width: 65px;
+                                        height: 65px;
+                                        background-repeat: no-repeat;
+                                    
+                                    }  
+                                }
+                            }
+                            div + div + div + div {
+                                figure {
+                                    margin: 247px 0 0 30px;
+                                    // transform: translate(0px, 206px);
+                                    img {
+                                        width: 188px;
+                                        height: 38.56px;
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                    
+                                    }  
+                                }
+                            }
+                        }   
+                        &.text {
+                            max-width: 45%;
+                            > div {
+                                h5 {
+                                    padding: 30px 0 11px 0;
+                                    font-family: "Manrope";
+                                    font-style: normal;
+                                    font-weight: 800;
+                                    font-size: 18px;
+                                    line-height: 27px;
+                                    letter-spacing: -0.03em;
+                                    color: #000000;
+                                    max-width: 251px;
+                                }
+                            }
+                            div + div {
+                                mark {
+                                    background: none;
+                                    padding: 15px 0 10px 0;
+                                    display: block;
+                                    font-family: "Gilroy-Medium";
+                                    font-size: 15px;
+                                    line-height: 26px;
+                                    letter-spacing: -0.03em;
+                                    color: #757095;
+                                    
+                                }
+                                span {
+                                    font-family: "Gilroy-Medium";
+                                    font-size: 15px;
+                                    line-height: 23px;
+                                    letter-spacing: -0.04em;
+                                    color: #757095;
+                                }
+                            }
+                            div + div + div {
+                                // figure {
+                                //   img {
+                                //     transform: translate(100px, 100px);
+                                //     background-size: contain;
+                                //     width: 65px;
+                                //     height: 65px;
+                                //     background-repeat: no-repeat;
+                                //   }  
+                                // }
+                                p {
+                                    font-family: 'Manrope';
+                                    font-style: normal;
+                                    font-weight: 800;
+                                    font-size: 15px;
+                                    line-height: 30px;
+                                    letter-spacing: -0.03em;
+                                    color: #000000;
+                                }
+                                span {
+                                    font-family: 'Gilroy-Medium';
+                                    font-size: 13px;
+                                    line-height: 24px;
+                                    letter-spacing: -0.02em;
+                                    color: #757095;
+                                }
+                            }
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.slick-arrow {
+    position: absolute;
+    display: inline-flex;
+    outline: none;
+    border: 0;
+    background: transparent;
+    color: white;
+    bottom: 16%;
+    z-index: 2;
+    left: 13px;
+    @include media ('<640px'){
+        top: 10%;
+       
+    }
+    
+    
+} 
+
+
+.slick-next {
+    left: 50px;
+    color: #453232;
+    &:before {
+        content: "";
+    position: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    border: none;
+   
+    top: -7px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    /* left: 80%; */
+    right: -10px;
+  
+        
+        
+    }
+    
+
+}
+.slick-prev {
+    
+    right: 97%;
+    &:before {
+        content: "";
+    position: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: 2px solid;
+    top: -7px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    left: -40%;
+    background: #3734A9;
+    /* z-index: 100; */
+    z-index: -1;
+        
+    }
+}
+
+
+    
+.slider__text {
+    font-family: 'Helvetica Neue Cyr Thin';
+    font-size: 14px;
+    color: white;
+    text-transform: capitalize;
+    
+    span {
+        
+    }
+    p{
+
+    }
+}
+
+
+
+
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-dots {
+    display: none;
+}
+
+
+
+

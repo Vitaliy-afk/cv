@@ -1,0 +1,60 @@
+.skills {
+    padding: 50px 0 100px 0;
+    .container{
+        max-width: 1010px;
+       .header {
+            padding-top: 50px;
+            text-align: center;
+        }
+       .skills-block {
+            padding: 75px 0 0 0
+       }
+        ul {
+            @extend %listreset;
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                &:nth-child(4){
+                    .img {
+                        padding-top: 80px;
+                    }
+                }
+            }
+            li {
+                p {
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 19px;
+                    text-align: center;
+                    letter-spacing: 0.02em;
+                    color: #828282;
+                    max-width: 105px;
+                    margin: 0 auto;
+                    padding-top: 20px
+                }
+                figure {
+                    text-align: center;
+                }
+
+                
+
+                .img {
+                    padding-top: 60px;
+                    i {
+                        font-size: 24px;
+                        letter-spacing: 3px;
+                    }
+                   
+                }
+                
+            }
+            
+        }
+    }
+}
+
+
+
