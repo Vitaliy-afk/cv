@@ -1,4 +1,9 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+
+@import "./base/breakpoints";
 @import "./vendors/include-media";
 @import "./vendors/normalize";
 
@@ -6,8 +11,8 @@
 
 @import "./base/mixins";
 @import "./base/variables";
-@import "./base/reset";
-@import "./base/breakpoints";
+// @import "./base/reset";
+
 
 
 
@@ -17,7 +22,6 @@
 
 @import "./layouts/common";
 @import "./layouts/header";
-@import "./layouts/footer";
 
 
 @import "./components/above-me";
@@ -26,4 +30,4 @@
 @import "./components/skills";
 
 
-
+@import "./layouts/footer";

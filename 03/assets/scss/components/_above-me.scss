@@ -8,15 +8,14 @@
         padding: 43px 0 0 0;
            
         p {
-            font-family: 'Open Sans';
-            font-style: normal;
+           
             font-weight: 400;
             font-size: 18px;
             line-height: 25px;
             text-align: center;
             color: #070707;
             &:not(:last-child){
-                 padding-bottom: 30px;
+                padding-bottom: 30px;
             }
         }
     }
