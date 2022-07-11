@@ -17,7 +17,7 @@ $media-expressions: (
 	'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
 );
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 @import "./vendors/include-media";
 @import "./base/variables";
 @import "./vendors/fonts";
@@ -38,7 +38,6 @@ $media-expressions: (
 @import "./layouts/common";
 @import "./layouts/header";
 
-@import "./layouts/footer";
 
 
 @import "./components/first-screen";

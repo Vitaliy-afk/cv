@@ -1,23 +1,21 @@
 .first-screen {
     padding-top: 92px;
-    .container {
-        h2{
-            font-family: 'Open Sans';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 65px;
-            color: #070707;
+    h2{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 65px;
+        color: #070707;
 
-        }
-        figure {
-            padding-top: 45px;
-            img {
-                max-width: 100%;
-                width: 970px;
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
+    }
+    figure {
+        padding-top: 45px;
+        img {
+            max-width: 100%;
+            width: 970px;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 }

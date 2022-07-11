@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -782,7 +782,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-.contacts .container .social ul, .skills .container ul, #footer nav ul, #header .container .head-menu ul {
+.social ul, .skills-block ul, .head-menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -846,7 +846,8 @@ h3 {
 #header .container {
   max-width: 540px;
 }
-#header .container .head-menu ul {
+
+.head-menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -854,67 +855,33 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#header .container .head-menu ul li a {
+.head-menu ul li a {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 0.02em;
+  color: #828282;
+  text-decoration: none;
+  -webkit-transition: color 0.4s ease-in-out;
+  -o-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+.head-menu ul li a:hover {
+  color: #4c4747;
+}
+.head-menu ul li:first-child a:active {
   color: #070707;
-  text-decoration: none;
 }
-#header .container .head-menu ul li:not(:last-child) {
+.head-menu ul li:not(:last-child) {
   padding-right: 41px;
-}
-
-#footer {
-  padding: 75px 0 100px 50px;
-  background-color: black;
-}
-#footer .container {
-  max-width: 1095px;
-}
-#footer nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-#footer nav li {
-  text-align: center;
-}
-#footer nav li:not(:last-child) {
-  padding-right: 65px;
-}
-#footer nav li a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-size: 12px;
-  position: relative;
-}
-#footer nav li a:before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  height: 2px;
-  width: 0%;
-  top: 20px;
-  background-color: red;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-#footer nav li a:hover:before {
-  width: 100%;
 }
 
 .first-screen {
   padding-top: 92px;
 }
-.first-screen .container h2 {
+.first-screen h2 {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
@@ -922,10 +889,10 @@ h3 {
   line-height: 65px;
   color: #070707;
 }
-.first-screen .container figure {
+.first-screen figure {
   padding-top: 45px;
 }
-.first-screen .container figure img {
+.first-screen figure img {
   max-width: 100%;
   width: 970px;
   background-repeat: no-repeat;
@@ -936,13 +903,13 @@ h3 {
   padding: 95px 0 98px 0;
   background: #F6F6F6;
 }
-.about-me .container .text {
+.about-me .text {
   text-align: center;
   max-width: 480px;
   margin: 0 auto;
   padding: 43px 0 0 0;
 }
-.about-me .container .text p {
+.about-me .text p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -951,24 +918,34 @@ h3 {
   text-align: center;
   color: #070707;
 }
-.about-me .container .text p:not(:last-child) {
+.about-me .text p:not(:last-child) {
   padding-bottom: 30px;
 }
 
 .skills {
   padding: 50px 0 100px 0;
 }
-.skills .container {
-  max-width: 1010px;
-}
-.skills .container .header {
+.skills .header {
   padding-top: 50px;
   text-align: center;
 }
-.skills .container .skills-block {
-  padding: 75px 0 0 0;
+.skills .header h3 {
+  padding-bottom: 20px;
 }
-.skills .container ul {
+.skills .header p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #070707;
+}
+
+.skills-block {
+  padding: 45px 0 0 0;
+}
+.skills-block ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -978,10 +955,10 @@ h3 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.skills .container ul li:nth-child(4) .img {
+.skills-block ul li:nth-child(4) .star-icon {
   padding-top: 80px;
 }
-.skills .container ul li p {
+.skills-block ul li p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
@@ -994,13 +971,13 @@ h3 {
   margin: 0 auto;
   padding-top: 20px;
 }
-.skills .container ul li figure {
+.skills-block ul li figure {
   text-align: center;
 }
-.skills .container ul li .img {
+.skills-block ul li .star-icon {
   padding-top: 60px;
 }
-.skills .container ul li .img i {
+.skills-block ul li .star-icon i {
   font-size: 24px;
   letter-spacing: 3px;
 }
@@ -1009,10 +986,10 @@ h3 {
   padding: 100px 0 75px 0;
   background: #F6F6F6;
 }
-.portfolio .container figure {
+.portfolio figure {
   padding: 50px 0 30px 0;
 }
-.portfolio .container a {
+.portfolio a {
   max-width: 255px;
   margin: 0 auto;
   font-family: "Open Sans";
@@ -1025,29 +1002,30 @@ h3 {
   color: #070707;
   text-decoration: none;
 }
-.portfolio .container a:hover {
+.portfolio a:hover {
   text-decoration: underline;
 }
-.portfolio .container div {
+
+.portfolio-works {
   padding-bottom: 25px;
 }
-.portfolio .container div figure img {
+.portfolio-works figure img {
   max-width: 100%;
 }
 
 .contacts {
-  padding: 100px 0 0 0;
+  padding: 100px 0 100px 0;
 }
-.contacts .container header {
+.contacts header {
   text-align: center;
   max-width: 285px;
   margin: 0 auto;
   padding-bottom: 55px;
 }
-.contacts .container header h3 {
+.contacts header h3 {
   padding-bottom: 15px;
 }
-.contacts .container header p {
+.contacts header p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -1055,7 +1033,28 @@ h3 {
   line-height: 25px;
   text-align: center;
 }
-.contacts .container .button {
+
+.social {
+  text-align: center;
+  padding-bottom: 55px;
+}
+.social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 -25px;
+}
+.social ul li {
+  padding: 0 25px;
+}
+.social ul li a {
+  display: block;
+}
+
+.button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1072,8 +1071,14 @@ h3 {
   border-radius: 22px;
   margin: 0 auto;
   margin-bottom: 30px;
+  -webkit-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
 }
-.contacts .container .button .btn {
+.button:hover {
+  background: #645353;
+}
+.button .btn {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
@@ -1083,32 +1088,16 @@ h3 {
   letter-spacing: 0.1em;
   color: #FFFFFF;
   text-decoration: none;
+  padding: 5px 0 5px;
 }
-.contacts .container .social {
-  text-align: center;
-  padding-bottom: 50px;
-}
-.contacts .container .social ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 -25px;
-}
-.contacts .container .social ul li {
-  padding: 0 25px;
-}
-.contacts .container .social ul li a {
-  display: block;
-}
-.contacts .container span {
+
+span {
   text-align: center;
   display: block;
-  width: 190px;
+  width: 230px;
   margin: 0 auto;
 }
+
 @media (max-width: 639px) {
   .slick-arrow {
     top: 10%;
