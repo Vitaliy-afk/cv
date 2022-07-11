@@ -31,13 +31,8 @@
             }
         }
         li {
-            &:first-child{
-                    &:active{
-                        a{
-                            color: #070707;
-                        }
-                    }
-                
+            .active{
+                color: #070707;
             }
         }
         li {
