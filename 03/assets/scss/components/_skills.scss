@@ -24,8 +24,10 @@
     ul {
         @extend %listreset;
         justify-content: space-between;
-        display: flex;
         flex-wrap: wrap;
+        @include media ('>640px'){
+            display: flex;
+        }
         li {
             &:nth-child(4){
                 .star-icon {
@@ -47,13 +49,21 @@
                 padding-top: 20px
             }
             figure {
-                    text-align: center;
+                text-align: center;
+              
             }
             .star-icon {
                 padding-top: 60px;
+                @include media ('<640px'){
+                   text-align: center;
+                   padding-bottom: 40px;
+                }
                 i {
                     font-size: 24px;
                     letter-spacing: 3px;
+                    @include media ('<640px'){
+                        font-size: 16px;
+                    }
                 }
             }
         }

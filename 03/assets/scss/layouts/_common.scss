@@ -32,4 +32,7 @@ h3 {
     font-size: 34px;
     line-height: 46px;
     text-align: center;
+    @include media ('<640px'){
+        font-size: 24px;
+    }
 }

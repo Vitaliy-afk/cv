@@ -578,9 +578,6 @@ h3 {
 }
 
 .head-menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -607,6 +604,79 @@ h3 {
   padding-right: 41px;
 }
 
+.burger-wrap {
+  visibility: hidden;
+}
+
+.burger {
+  display: inline-block;
+  border: 0;
+  background: none;
+  outline: 0;
+  color: #333;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 4px solid currentColor;
+  width: 30px;
+  -webkit-transition: border-bottom 1s ease-in-out;
+  -o-transition: border-bottom 1s ease-in-out;
+  transition: border-bottom 1s ease-in-out;
+}
+.burger:-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.burger:before {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.burger:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid currentColor;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+.burger.open {
+  border-bottom: 4px solid transparent;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+  -o-transition: border-bottom 0.8s ease-in-out;
+  transition: border-bottom 0.8s ease-in-out;
+}
+.burger.open:before {
+  -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+      -ms-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+          transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+.burger.open:after {
+  -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+      -ms-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+          transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
 .about-me {
   padding: 95px 0 98px 0;
   background: #F6F6F6;
@@ -614,6 +684,7 @@ h3 {
 .about-me .text {
   text-align: center;
   max-width: 480px;
+  width: 100%;
   margin: 0 auto;
   padding: 43px 0 0 0;
 }
@@ -705,9 +776,6 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -825,4 +893,74 @@ span {
   line-height: 19px;
   text-align: center;
   color: #828282;
+}
+
+@media (min-width: 641px) {
+  .head-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .skills-block ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .burger-wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .burger-wrap {
+    display: inline-block;
+    visibility: visible;
+    z-index: 999;
+  }
+  .head-menu {
+    visibility: hidden;
+    -webkit-transform: translate(-100%, 0);
+        -ms-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  .first-screen {
+    padding-top: 200px;
+  }
+  .first-screen h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 639px) {
+  h3 {
+    font-size: 24px;
+  }
+  .head-menu ul li a {
+    font-size: 12px;
+  }
+  .burger-active .head-menu {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
+    -webkit-transition: 0.9s;
+    -o-transition: 0.9s;
+    transition: 0.9s;
+    border-right: 3px solid #f23005;
+    font-size: 8px;
+  }
+  .about-me .text p {
+    font-size: 14px;
+  }
+  .skills-block ul li .star-icon {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .skills-block ul li .star-icon i {
+    font-size: 16px;
+  }
 }
