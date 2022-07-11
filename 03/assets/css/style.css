@@ -1,37 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-* {
-  max-height: 1000000px;
-}
-
-body {
-  color: #333;
-  background: #fff;
-  font: 16px/1.2 "Arial", "Helvetica Neue", "Helvetica", sans-serif;
-  min-width: 320px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  background-position: center;
-}
-
-.gm-style img {
-  max-width: none;
-}
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -426,6 +393,39 @@ th {
   padding: 0;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+* {
+  max-height: 1000000px;
+}
+
+body {
+  color: #333;
+  background: #fff;
+  font: 16px/1.2 "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  background-position: center;
+}
+
+.gm-style img {
+  max-width: none;
+}
+
 form,
 fieldset {
   margin: 0;
@@ -614,16 +614,16 @@ h3 {
 #contacts {
   padding: 100px 0 100px 0;
 }
-#contacts header {
+#contacts .contacts-f {
   text-align: center;
   max-width: 285px;
   margin: 0 auto;
   padding-bottom: 55px;
 }
-#contacts header h3 {
+#contacts .contacts-f h3 {
   padding-bottom: 15px;
 }
-#contacts header p {
+#contacts .contacts-f p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
