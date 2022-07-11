@@ -20,31 +20,29 @@ $media-expressions: (
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 @import "./vendors/include-media";
 @import "./base/variables";
-@import "./vendors/fonts";
+@import "./base/reset";
+
+
 @import "./vendors/normalize";
 @import "./base/mixins";
 
 @import "./base/breakpoints";
 
 
-@import "./vendors/slick";
-@import "./vendors/slider";
 
 @import "./base/forms";
-@import "./base/functions";
 @import "./base/helpers";
 
 
 @import "./layouts/common";
 @import "./layouts/header";
+@import "./layouts/footer";
 
 
-
-@import "./components/first-screen";
 @import "./components/above-me";
-@import "./components/skills";
+@import "./components/first-screen";
 @import "./components/portfolio";
-@import "./components/contacts";
+@import "./components/skills";
 
 
 

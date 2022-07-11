@@ -36,11 +36,11 @@
         }
         li {
             &:first-child{
-                a {
                     &:active{
-                        color: #070707;
+                        a{
+                            color: #070707;
+                        }
                     }
-                }
                 
             }
         }
