@@ -537,7 +537,13 @@ input[type=submit] {
 
 #wrapper {
   overflow: hidden;
+}
+
+body {
   font-family: "Open Sans";
+  color: #070707;
+  font-size: 18px;
+  letter-spacing: normal;
 }
 
 .container {
@@ -558,7 +564,7 @@ figure {
   margin: 0;
 }
 
-h3 {
+.site-header {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
@@ -935,7 +941,7 @@ span {
 }
 
 @media (max-width: 639px) {
-  h3 {
+  .site-header {
     font-size: 24px;
   }
   .head-menu ul li a {
