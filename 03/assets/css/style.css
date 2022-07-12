@@ -514,7 +514,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-.social ul, .skills-block ul, .head-menu ul {
+.social ul, .skills-block ul, .head-menu .menu-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -579,16 +579,18 @@ figure {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 30px 0 25px 0;
+  padding: 25px 0 30px 0;
   border-bottom: 1px solid #828282;
 }
 
-.head-menu ul {
+.head-menu .menu-list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.head-menu ul li a {
+.head-menu .menu-list .menu-item .menu-link {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -600,13 +602,13 @@ figure {
   -o-transition: color 0.4s ease-in-out;
   transition: color 0.4s ease-in-out;
 }
-.head-menu ul li a:hover {
+.head-menu .menu-list .menu-item .menu-link:hover {
   color: #4c4747;
 }
-.head-menu ul li .active {
+.head-menu .menu-list .menu-link.active {
   color: #070707;
 }
-.head-menu ul li:not(:last-child) {
+.head-menu .menu-list .menu-item:not(:last-child) {
   padding-right: 41px;
 }
 
@@ -902,7 +904,7 @@ span {
 }
 
 @media (min-width: 641px) {
-  .head-menu ul {
+  .head-menu .menu-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -944,8 +946,11 @@ span {
   .site-header {
     font-size: 24px;
   }
-  .head-menu ul li a {
+  .head-menu .menu-list .menu-item .menu-link {
     font-size: 12px;
+  }
+  .head-menu .menu-list .menu-item:not(:last-child) {
+    padding: 0;
   }
   .burger-active .head-menu {
     opacity: 1;
