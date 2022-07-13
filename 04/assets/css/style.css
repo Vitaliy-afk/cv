@@ -546,6 +546,8 @@ input[type=submit] {
 body {
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
+  font-size: 18px;
+  letter-spacing: normal;
   background: #3B3F45;
   line-height: 21px;
 }
@@ -581,6 +583,11 @@ body {
   font-size: 24px;
   line-height: 28px;
 }
+#header p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
 
 .shop-menu {
   padding-top: 18px;
@@ -609,8 +616,8 @@ body {
 }
 
 input[type=checkbox] {
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
   background: #FFFFFF;
 }
 input[type=checkbox]:checked + label {
@@ -640,8 +647,6 @@ label {
   min-height: 45px;
   color: #FF8984;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   border: none;
   -webkit-transition: background 0.1s ease-in;
   -o-transition: background 0.1s ease-in;
