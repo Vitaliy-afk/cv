@@ -547,10 +547,10 @@ body {
 }
 
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
-  max-width: 1010px;
+  max-width: 1000px;
 }
 
 * {
@@ -760,14 +760,14 @@ figure {
 .skills {
   padding: 50px 0 100px 0;
 }
-.skills .header {
+.skills > div {
   padding-top: 50px;
   text-align: center;
 }
-.skills .header h3 {
+.skills > div h3 {
   padding-bottom: 20px;
 }
-.skills .header p {
+.skills > div p {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
