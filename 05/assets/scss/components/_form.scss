@@ -1,31 +1,16 @@
-.shop-menu{
-    padding-top: 18px;
-    ul {
-        @extend %listreset;
-        li {
-            background: #88839E;
-            min-height: 45px;
-            display: flex;
-            align-items: center;
-            transition: background .1s ease-in;
-            padding-left: 10px;
-            cursor: pointer;
-            &:nth-child(even){
-                background: #7A7593;
-            }
-            &:hover {
-                background: #625E77;
-                border-bottom: 3px solid #FFFFFF;
-                border-top: 3px solid #FFFFFF;
-            }
-            &:active {
-                background: #FF8984;
-            }
-        }
+.form-row {
+    display: flex;
+    margin: 0 -15px;
+    .columns {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 15px;
     }
 }
 
-
+.form-rows {
+    display: flex;
+}
 
 input[type="checkbox"] {
     width: 20px;
@@ -37,35 +22,40 @@ input[type="checkbox"] {
    
 }
   
-
-
-label {
-    padding-left: 35px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    display: block;
-}
-
-#submit-btn {
-    background: #4A4F56;
-    margin-top: 50px;
+.select-country{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-height: 45px;
-    color: #FF8984;
-    font-weight: 400;
-    border: none;
-    transition: background .1s ease-in;
-    &:hover {
-        background: #333538;
-    }
-
 }
 
+// label {
+//     padding-left: 35px;
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 21px;
+//     display: block;
+// }
 
+// #submit-btn {
+//     background: #4A4F56;
+//     margin-top: 50px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+//     min-height: 45px;
+//     color: #FF8984;
+//     font-weight: 400;
+//     border: none;
+//     transition: background .1s ease-in;
+//     &:hover {
+//         background: #333538;
+//     }
+
+// }
+
+
+// input[type="checkbox"] {
+//     appearance: none;
+// }
 
 .shop-list{
     position: relative;
@@ -88,6 +78,7 @@ label {
         &:before, &:after {
             display: inline-block;
             content: '';
+    
         }
         &:before {
             position: absolute;
