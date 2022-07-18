@@ -136,7 +136,7 @@
         color: #969696;
         &:before {
             content: '';
-            background-image: url('/assets/image/down-photo.png');
+            background-image: url('../assets/image/down-photo.png');
             width: 138px;
             height: 30px;
             display: block;
@@ -151,7 +151,7 @@
         transform: translate(7px, 0px);
         &:before {
             content: '';
-            background-image: url('/assets/image/Righticon.png');
+            background-image: url('../assets/image/Righticon.png');
             width: 30px;
             height: 30px;
             display: block;
@@ -229,7 +229,7 @@
        
         &:after {
             position: absolute;
-            background-image: url("/assets/image/Arrows.png");
+            background-image: url("../assets/image/Arrows.png");
             top: 38px;
             width: 1em;
             height: 1em;
