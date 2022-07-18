@@ -436,69 +436,6 @@ fieldset {
   border-style: none;
 }
 
-input[type=text],
-input[type=tel],
-input[type=email],
-input[type=search],
-input[type=password],
-textarea {
-  -webkit-appearance: none;
-  -webkit-border-radius: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 1px solid #999;
-  padding: 0.4em 0.7em;
-}
-input[type=text]:focus,
-input[type=tel]:focus,
-input[type=email]:focus,
-input[type=search]:focus,
-input[type=password]:focus,
-textarea:focus {
-  border-color: #333;
-}
-input[type=text]::-webkit-input-placeholder,
-input[type=tel]::-webkit-input-placeholder,
-input[type=email]::-webkit-input-placeholder,
-input[type=search]::-webkit-input-placeholder,
-input[type=password]::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #999;
-}
-input[type=text]::-moz-placeholder,
-input[type=tel]::-moz-placeholder,
-input[type=email]::-moz-placeholder,
-input[type=search]::-moz-placeholder,
-input[type=password]::-moz-placeholder,
-textarea::-moz-placeholder {
-  opacity: 1;
-  color: #999;
-}
-input[type=text]:-moz-placeholder,
-input[type=tel]:-moz-placeholder,
-input[type=email]:-moz-placeholder,
-input[type=search]:-moz-placeholder,
-input[type=password]:-moz-placeholder,
-textarea:-moz-placeholder {
-  color: #999;
-}
-input[type=text]:-ms-input-placeholder,
-input[type=tel]:-ms-input-placeholder,
-input[type=email]:-ms-input-placeholder,
-input[type=search]:-ms-input-placeholder,
-input[type=password]:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  color: #999;
-}
-input[type=text].placeholder,
-input[type=tel].placeholder,
-input[type=email].placeholder,
-input[type=search].placeholder,
-input[type=password].placeholder,
-textarea.placeholder {
-  color: #999;
-}
-
 select {
   -webkit-border-radius: 0;
 }
@@ -516,6 +453,12 @@ input[type=submit] {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   cursor: pointer;
+}
+
+.select-gender, .form-rows, .content-container, .create-acc .login {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .clearfix:after {
@@ -551,7 +494,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  max-width: 1470px;
+  max-width: 1195px;
 }
 
 * {
@@ -565,14 +508,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 50px;
   margin: 0 -15px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 15px;
+}
+.form-row .col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
 }
 .form-row .columns {
-  max-width: 570px;
   padding: 36px 35px 0 34px;
   background: #FFFFFF;
 }
@@ -580,6 +528,123 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.form-row .columns.profile #update-btn {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  min-height: 38px;
+  background: #007BFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  width: 150px;
+  padding: 8px 10px;
+}
+.form-row h1, .form-row h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  padding-bottom: 25px;
+}
+.form-row span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+}
+
+.create-acc #sign-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  min-height: 38px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #FFFFFF;
+  background: #007BFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+}
+.create-acc .login {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  margin: 0 -15px;
+  padding-top: 15px;
+}
+.create-acc .login li {
+  padding: 0 15px;
+}
+.create-acc .login li p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: -0.2px;
+  color: #545454;
+}
+.create-acc .login a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+  color: #007BFF;
+}
+
+.content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.content-container .photoinput {
+  color: transparent;
+  border: none;
+  outline: none;
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  display: block;
+  padding: 7px 10px;
+  width: 100%;
+  width: 138px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+.content-container .trash {
+  color: transparent;
+  background-image: url("/assets/image/Righticon.png");
+  border: none;
+  outline: none;
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  display: block;
+  padding: 7px 10px;
+  width: 100%;
+  width: 138px;
+  margin-bottom: 25px;
+  margin-top: 5px;
 }
 
 .form-acc {
@@ -591,6 +656,40 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
+.form-rows li:nth-child(1) .input {
+  width: 243px;
+  margin-right: 12px;
+}
+.form-rows li:nth-child(2) .input {
+  width: 100%;
+  width: 245px;
+}
+.form-rows.country .input {
+  width: 245px;
+}
+
+.terms {
+  max-width: 410px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+  border-bottom: 1px solid #e2d4d4;
+  padding-bottom: 20px;
+}
+.terms a {
+  text-decoration: none;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #007BFF;
+}
 
 .select-country {
   display: -webkit-box;
@@ -598,10 +697,30 @@ body {
   display: flex;
 }
 
-.form {
+.input {
   background: #FFFFFF;
   border: 1px solid #E4E4E4;
   border-radius: 6px;
+  display: block;
+  padding: 7px 10px;
+  width: 100%;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+
+.select-gender {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.select-gender li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 50px;
+}
+.select-gender li .checkbox {
+  border-radius: 10px;
 }
 
 label {

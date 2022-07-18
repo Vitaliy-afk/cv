@@ -5,105 +5,140 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shop-list</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <div id="wrapper">
        <div class="container">
             <div class="form-row">
-                <div class="columns creat-acc">
-                    <form class="form-acc" action="#" method="GET">
-                        <h1>Create an Account</h1>
-                        <div class="form-rows">
-                            <label class="label" for="first-name">First Name
-                                <input class="form style" id="first-name" type="text">
+                <div class="col">
+                    <div class="columns create-acc">
+                        <form class="form-acc" action="#" method="GET">
+                            <h1>Create an Account</h1>
+                            <ul class="form-rows">
+                                <li>
+                                    <label class="label" for="name">First Name
+                                        <input class="input style" id="name" type="text">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label" for="email">Last Name
+                                        <input class="input style" id="email" type="text">
+                                    </label>
+                                </li>
+                            </ul>
+                            <label class="label" for="e-mail">E-mail
+                                <input class="input style" id="e-mail" type="text" name="e-mail">
                             </label>
-                            <label class="label" for="last-name">Last Name
-                                <input class="form style" id="last-name" type="text">
-                            </label>
-                        </div>
-                        <label class="label" for="e-mail">E-mail
-                            <input class="form style" id="e-mail" type="text" name="e-mail">
-                        </label>
-                        <span>We'll never share your email with anyone else.</span>
-                        <div class="select-gender">
-                            <input class="form style" type="radio" value="male">Male
-                            <input class="form style" type="radio" value="Famale">Famale
-                        </div>
-                        <div class="select-country">
-                            <div class="select-wrapper">
-                                <label for="name">Country</label>
-                                <select name="country" class="custom-select">
-                                    <option>Ukraine</option>
-                                    <option>Poland</option>
-                                    <option>Sweden</option>
-                                    <option>Spain</option>
-                                </select>
-                                <span class="custom-arrow"></span>
+                            <span>We'll never share your email with anyone else.</span>
+                            <ul class="select-gender">
+                                <li> 
+                                    <label class="label" for="checkbox">Male
+                                    <input class="checkbox" type="checkbox" value="male">
+                                </li>
+                                <li>
+                                    <label class="label" for="checkbox">Famele
+                                    <input class="checkbox" type="checkbox" value="Famale">
+                                </li>
+                            </ul>
+                            <div class="select-country">
+                                <ul class="form-rows country">
+                                    <li>
+                                        <label for="name">Country</label>
+                                        <select id="country" name="country" class="input style" required="">
+                                            <option value="" disabled="" selected="">Country</option>
+                                            <option value="Ukraine">Ukraine</option>
+                                            <option value="Spain">Spain</option>
+                                            <option value="Sweden">Sweden</option>
+                                            <option value="Poland">Poland</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label for="city">City</label>
+                                        <input class="input style" id="city" type="text" name="city">
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="select-wrapper">
-                                <label for="city">City</label>
-                                <input class="form style" id="city" type="text" name="city">
-                            </div>
+                            <button type="button" id="sign-btn">Sign Up</button>
+                        </form>
+                        <div class="terms">
+                            By clicking the 'Sign Up' button, you confirm that you accept our<br>
+                            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
                         </div>
-                        <button type="button" id="sign-btn">Sign Up</button>
-                    </form>
-                    <span>
-                        By clicking the 'Sign Up' button, you confirm that you accept our<br>
-                        <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
-                    </span>
-                    <div class="login">
-                        <p>Have an account?</p>
-                        <a href="#">Log In</a>
+                        <ul class="login">
+                            <li>
+                                <p>Have an account?</p>
+                            </li>
+                            <li>
+                                <a href="#">Log In</a>  
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="columns profile">
-                    <h1>Profile</h1>
-                    <div>
-                        <div class="photo-profile">
-                            <img src="./assets/image/Image.png" alt="prof-image">
-                        </div>
-                        <div class="content-container">
-                            <label class="upload-btn" for="photo-upload">Securely take a photo </label>
-                            <input id="photo-upload" class="photoinput"  type="file">
-                        </div>
-                    </div>
-                    <form class="form-acc" action="#" method="GET">
-                        <div class="form-rows">
-                            <label class="label" for="name">First Name
-                                <input class="form style" id="name" type="text">
-                            </label>
-                            <label class="label" for="email">Last Name
-                                <input class="form style" id="email" type="text">
-                            </label>
-                        </div>
-                        <div class="select-country">
-                            <div class="select-wrapper">
-                                <label for="name">Country</label>
-                                <select name="country" class="custom-select">
-                                    <option>Ukraine</option>
-                                    <option>Poland</option>
-                                    <option>Sweden</option>
-                                    <option>Spain</option>
-                                </select>
-                                <span class="custom-arrow"></span>
+                <div class="col">
+                    <div class="columns profile">
+                        <h2>Profile</h2>
+                        <div class="photo-col">
+                            <div class="photo-profile">
+                                <img src="./assets/image/Image.png" alt="prof-image">
                             </div>
+                            <ul class="content-container">
+                                <li>
+                                    <input id="photo-upload" class="photoinput"  type="file" title="your text">
+                                    <label class="upload-btn" for="photo-upload">Up to 1MB (300x300 px)</label>
+                                </li>
+                                <li>
+                                    <input id="trash" class="trash" type="file" title="your text">
+                                </li>
+                            </ul>
                         </div>
-                        <div class="select-wrapper">
-                            <label for="city">City</label>
-                            <input class="form style" type="text" name="city">
-                        </div>
-                         <div class="form-rows">
-                            <label class="label" for="Zip-Code">Zip Code
-                                <input class="form style" id="Zip-Code" type="number" name="zip-code">
-                            </label>
-                            <label class="label" for="Phone-Number">Phone Number
-                                <input class="form style" id="Phone-Number" type="number">
-                            </label>
-                        </div>
-                        <button type="button" id="update-btn">Update</button>
-                    </form>
+                        <form class="form-acc" action="#" method="GET">
+                            <ul class="form-rows">
+                                <li>
+                                    <label class="label" for="name">First Name
+                                        <input class="input style" id="name" type="text">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label" for="email">Last Name
+                                        <input class="input style" id="email" type="text">
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="select-country">
+                                <ul class="form-rows country">
+                                    <li>
+                                        <label for="name">Country</label>
+                                        <select id="country" name="country" class="input style" required="">
+                                            <option value="" disabled="" selected="">Country</option>
+                                            <option value="Ukraine">Ukraine</option>
+                                            <option value="Spain">Spain</option>
+                                            <option value="Sweden">Sweden</option>
+                                            <option value="Poland">Poland</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <label for="city">City</label>
+                                        <input class="input style" id="city" type="text" name="city">
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="form-rows">
+                                <li>
+                                    <label class="label" for="zip">Zip Code
+                                        <input class="input style" id="zip" type="number">
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="label" for="email">Phone Number
+                                        <input class="input style" id="email" type="number">
+                                    </label>
+                                </li>
+                            </ul>
+                            <button type="button" id="update-btn">Update</button>
+                        </form>
+                    </div>
                 </div>
             </div>
        </div>
