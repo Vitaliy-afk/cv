@@ -9,11 +9,12 @@
         padding: 0 15px;
     }
     .columns {
-        padding: 36px 35px 0 34px;
+        padding: 36px 35px 20px 34px;
         background: #FFFFFF;
         &.profile {
             > div {
                 display: flex;
+                padding-bottom: 11px;
             }
             #update-btn{
                 font-weight: 500;
@@ -30,6 +31,12 @@
                 border-radius: 6px;
                 width: 150px;
                 padding: 8px 10px;
+                margin-bottom: 85px;
+                transition: background .1s ease-in;
+                &:hover {
+                    background: #2e465f;
+                }
+
             }
             
         }
@@ -71,6 +78,11 @@
         background: #007BFF;
         border: 1px solid #E4E4E4;
         border-radius: 6px;
+        margin-bottom: 24px;
+        transition: background .1s ease-in;
+        &:hover {
+            background: #2e465f;
+        }
     }
     .login {
         @extend %listreset;
@@ -98,6 +110,9 @@
             line-height: 22px;
             letter-spacing: -0.1px;
             color: #007BFF;
+            &:hover{
+                text-decoration: underline
+            }
         }
     }
 }
@@ -105,35 +120,44 @@
 .content-container {
     @extend %listreset;
     display: flex;
-    .photoinput {
-        color: transparent;
-        border: none;
-        outline: none;
-        background: #FFFFFF;
-        border: 1px solid #E4E4E4;
-        border-radius: 6px;
-        display: block;
-        padding: 7px 10px;
-        width: 100%;
-        width: 138px;
-        margin-bottom: 25px;
-        margin-top: 5px;
-        
+    transform: translate(0px, 10px);
+    #photo-upload {
+        display: none;
     }
-    .trash {
-        color: transparent;
-        background-image: url('/assets/image/Righticon.png');
-        border: none;
-        outline: none;
-        background: #FFFFFF;
-        border: 1px solid #E4E4E4;
-        border-radius: 6px;
-        display: block;
-        padding: 7px 10px;
-        width: 100%;
-        width: 138px;
-        margin-bottom: 25px;
-        margin-top: 5px;
+    
+    input[type="file"] {
+        opacity: 0;
+    }
+    .upload-btn {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.1px;
+        color: #969696;
+        &:before {
+            content: '';
+            background-image: url('/assets/image/down-photo.png');
+            width: 138px;
+            height: 30px;
+            display: block;
+            background-repeat: no-repeat;
+
+        }
+    }
+    #trash{
+        display: none;
+    }
+    .delete {
+        transform: translate(7px, 0px);
+        &:before {
+            content: '';
+            background-image: url('/assets/image/Righticon.png');
+            width: 30px;
+            height: 30px;
+            display: block;
+            background-repeat: no-repeat;
+
+        }
     }
 }
 
@@ -145,10 +169,6 @@
 .form-rows {
     @extend %listreset;
     display: flex;
-    .input {
-        // width: 247px;
-        
-    }
     li {
         &:nth-child(1){
             .input{
@@ -163,12 +183,7 @@
             }
         }
     }
-    &.country {
-        
-        .input {
-            width: 245px;
-        }
-    }
+    
 }
 
 .terms {
@@ -193,11 +208,39 @@
         letter-spacing: -0.1px;
         
         color: #007BFF;
+        &:hover{
+            text-decoration: underline
+        }
     }
 }
   
 .select-country{
     display: flex;
+    .input {
+        -webkit-appearance: none;
+    }
+    .country-arrows {
+        position: relative;
+        pointer-events: none;
+        &:after {
+            display: inline-block;
+            content: '';
+        }
+       
+        &:after {
+            position: absolute;
+            background-image: url("/assets/image/Arrows.png");
+            top: 38px;
+            width: 1em;
+            height: 1em;
+            background-size: 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            right: 15px;
+            cursor: pointer;
+            
+        }
+    }
 }
 
 .input {
@@ -209,15 +252,15 @@
     width: 100%;
     margin-bottom: 25px;
     margin-top: 5px;
-    // width: 245px;
-    
     
 }
 .select-gender {
     @extend %listreset;
     display: flex;
+    margin-bottom: 23px;
     li {
         display: flex;
+        flex-direction: column-reverse;
         padding-right: 50px;
         .checkbox {
             border-radius: 10px;
@@ -229,7 +272,6 @@
 label {
     // transition: all 0.25s ease;
     // -webkit-backface-visibility: hidden;
-    // pointer-events: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -242,30 +284,12 @@ label {
     color: #545454;
 }
 
-// #submit-btn {
-//     background: #4A4F56;
-//     margin-top: 50px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 100%;
-//     min-height: 45px;
-//     color: #FF8984;
-//     font-weight: 400;
-//     border: none;
-//     transition: background .1s ease-in;
-//     &:hover {
-//         background: #333538;
-//     }
-
-// }
 
 
-// input[type="checkbox"] {
-//     appearance: none;
-// }
 
-
+.photo-profile {
+    margin-right: 22px;
+}
 
 
 

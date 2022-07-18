@@ -521,13 +521,14 @@ body {
   padding: 0 15px;
 }
 .form-row .columns {
-  padding: 36px 35px 0 34px;
+  padding: 36px 35px 20px 34px;
   background: #FFFFFF;
 }
 .form-row .columns.profile > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 11px;
 }
 .form-row .columns.profile #update-btn {
   font-weight: 500;
@@ -544,6 +545,13 @@ body {
   border-radius: 6px;
   width: 150px;
   padding: 8px 10px;
+  margin-bottom: 85px;
+  -webkit-transition: background 0.1s ease-in;
+  -o-transition: background 0.1s ease-in;
+  transition: background 0.1s ease-in;
+}
+.form-row .columns.profile #update-btn:hover {
+  background: #2e465f;
 }
 .form-row h1, .form-row h2 {
   font-family: "Roboto";
@@ -579,6 +587,13 @@ body {
   background: #007BFF;
   border: 1px solid #E4E4E4;
   border-radius: 6px;
+  margin-bottom: 24px;
+  -webkit-transition: background 0.1s ease-in;
+  -o-transition: background 0.1s ease-in;
+  transition: background 0.1s ease-in;
+}
+.create-acc #sign-btn:hover {
+  background: #2e465f;
 }
 .create-acc .login {
   -webkit-box-pack: center;
@@ -611,40 +626,54 @@ body {
   letter-spacing: -0.1px;
   color: #007BFF;
 }
+.create-acc .login a:hover {
+  text-decoration: underline;
+}
 
 .content-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transform: translate(0px, 10px);
+      -ms-transform: translate(0px, 10px);
+          transform: translate(0px, 10px);
 }
-.content-container .photoinput {
-  color: transparent;
-  border: none;
-  outline: none;
-  background: #FFFFFF;
-  border: 1px solid #E4E4E4;
-  border-radius: 6px;
-  display: block;
-  padding: 7px 10px;
-  width: 100%;
+.content-container #photo-upload {
+  display: none;
+}
+.content-container input[type=file] {
+  opacity: 0;
+}
+.content-container .upload-btn {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+  color: #969696;
+}
+.content-container .upload-btn:before {
+  content: "";
+  background-image: url("/assets/image/down-photo.png");
   width: 138px;
-  margin-bottom: 25px;
-  margin-top: 5px;
+  height: 30px;
+  display: block;
+  background-repeat: no-repeat;
 }
-.content-container .trash {
-  color: transparent;
+.content-container #trash {
+  display: none;
+}
+.content-container .delete {
+  -webkit-transform: translate(7px, 0px);
+      -ms-transform: translate(7px, 0px);
+          transform: translate(7px, 0px);
+}
+.content-container .delete:before {
+  content: "";
   background-image: url("/assets/image/Righticon.png");
-  border: none;
-  outline: none;
-  background: #FFFFFF;
-  border: 1px solid #E4E4E4;
-  border-radius: 6px;
+  width: 30px;
+  height: 30px;
   display: block;
-  padding: 7px 10px;
-  width: 100%;
-  width: 138px;
-  margin-bottom: 25px;
-  margin-top: 5px;
+  background-repeat: no-repeat;
 }
 
 .form-acc {
@@ -662,9 +691,6 @@ body {
 }
 .form-rows li:nth-child(2) .input {
   width: 100%;
-  width: 245px;
-}
-.form-rows.country .input {
   width: 245px;
 }
 
@@ -690,11 +716,37 @@ body {
   letter-spacing: -0.1px;
   color: #007BFF;
 }
+.terms a:hover {
+  text-decoration: underline;
+}
 
 .select-country {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.select-country .input {
+  -webkit-appearance: none;
+}
+.select-country .country-arrows {
+  position: relative;
+  pointer-events: none;
+}
+.select-country .country-arrows:after {
+  display: inline-block;
+  content: "";
+}
+.select-country .country-arrows:after {
+  position: absolute;
+  background-image: url("/assets/image/Arrows.png");
+  top: 38px;
+  width: 1em;
+  height: 1em;
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  right: 15px;
+  cursor: pointer;
 }
 
 .input {
@@ -712,11 +764,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 23px;
 }
 .select-gender li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   padding-right: 50px;
 }
 .select-gender li .checkbox {
@@ -733,4 +790,8 @@ label {
   display: block;
   letter-spacing: -0.2px;
   color: #545454;
+}
+
+.photo-profile {
+  margin-right: 22px;
 }
