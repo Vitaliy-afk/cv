@@ -653,7 +653,7 @@ body {
 }
 .content-container .upload-btn:before {
   content: "";
-  background-image: url("/assets/image/down-photo.png");
+  background-image: url("../assets/image/down-photo.png");
   width: 138px;
   height: 30px;
   display: block;
@@ -669,7 +669,7 @@ body {
 }
 .content-container .delete:before {
   content: "";
-  background-image: url("/assets/image/Righticon.png");
+  background-image: url("../assets/image/Righticon.png");
   width: 30px;
   height: 30px;
   display: block;
