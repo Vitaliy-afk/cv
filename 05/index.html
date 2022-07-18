@@ -16,20 +16,20 @@
                     <form class="form-acc" action="#" method="GET">
                         <h1>Create an Account</h1>
                         <div class="form-rows">
-                            <label class="label" for="first-tname">First Name
-                                <input type="text" name="text">
+                            <label class="label" for="first-name">First Name
+                                <input class="form style" id="first-name" type="text">
                             </label>
                             <label class="label" for="last-name">Last Name
-                                <input type="last-name" name="text">
+                                <input class="form style" id="last-name" type="text">
                             </label>
                         </div>
                         <label class="label" for="e-mail">E-mail
-                            <input type="email" name="one" value="one">
+                            <input class="form style" id="e-mail" type="text" name="e-mail">
                         </label>
                         <span>We'll never share your email with anyone else.</span>
                         <div class="select-gender">
-                            <input type="radio"value="male">Male
-                            <input type="radio"value="male">Famale
+                            <input class="form style" type="radio" value="male">Male
+                            <input class="form style" type="radio" value="Famale">Famale
                         </div>
                         <div class="select-country">
                             <div class="select-wrapper">
@@ -44,10 +44,10 @@
                             </div>
                             <div class="select-wrapper">
                                 <label for="city">City</label>
-                                <input type="city" name="one" value="one">
+                                <input class="form style" id="city" type="text" name="city">
                             </div>
                         </div>
-                        <button type="submit" id="submit-btn">Sign Up</button>
+                        <button type="button" id="sign-btn">Sign Up</button>
                     </form>
                     <span>
                         By clicking the 'Sign Up' button, you confirm that you accept our<br>
@@ -58,55 +58,52 @@
                         <a href="#">Log In</a>
                     </div>
                 </div>
-                
-
                 <div class="columns profile">
                     <h1>Profile</h1>
                     <div>
                         <div class="photo-profile">
-                            <img src="./assets/image/📷 Image.png" alt="prof-image">
+                            <img src="./assets/image/Image.png" alt="prof-image">
                         </div>
                         <div class="content-container">
                             <label class="upload-btn" for="photo-upload">Securely take a photo </label>
-                            <input id="photo-upload" class="photoinput" capture="camera" type="file">
+                            <input id="photo-upload" class="photoinput"  type="file">
                         </div>
                     </div>
-                        <form class="form-acc" action="#" method="GET">
-                            <div class="form-rows">
-                                <label class="label" for="first-tname">First Name
-                                    <input type="firs-tname" name="one" value="one">
-                                </label>
-                                <label class="label" for="last-name">Last Name
-                                    <input type="last-name" name="one" value="one">
-                                </label>
+                    <form class="form-acc" action="#" method="GET">
+                        <div class="form-rows">
+                            <label class="label" for="name">First Name
+                                <input class="form style" id="name" type="text">
+                            </label>
+                            <label class="label" for="email">Last Name
+                                <input class="form style" id="email" type="text">
+                            </label>
+                        </div>
+                        <div class="select-country">
+                            <div class="select-wrapper">
+                                <label for="name">Country</label>
+                                <select name="country" class="custom-select">
+                                    <option>Ukraine</option>
+                                    <option>Poland</option>
+                                    <option>Sweden</option>
+                                    <option>Spain</option>
+                                </select>
+                                <span class="custom-arrow"></span>
                             </div>
-                            <div class="select-country">
-                                <div class="select-wrapper">
-                                    <label for="name">Country</label>
-                                    <select name="country" class="custom-select">
-                                        <option>Ukraine</option>
-                                        <option>Poland</option>
-                                        <option>Sweden</option>
-                                        <option>Spain</option>
-                                    </select>
-                                    <span class="custom-arrow"></span>
-                                </div>
-                                <div class="select-wrapper">
-                                    <label for="city">City</label>
-                                    <input type="city" name="one" value="one">
-                                </div>
-                            </div>
-                            <div class="form-rows">
-                                <label class="label" for="Zip-Code">Zip Code
-                                    <input type="Zip-Code" name="zip-code" value="one">
-                                </label>
-                                <label class="label" for="Phone Number">Phone Number
-                                    <input type=">Phone-Number" name="one" value="one" type="number">
-                                </label>
-                            </div>
-                            <button type="submit" id="submit-btn">Update</button>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="select-wrapper">
+                            <label for="city">City</label>
+                            <input class="form style" type="text" name="city">
+                        </div>
+                         <div class="form-rows">
+                            <label class="label" for="Zip-Code">Zip Code
+                                <input class="form style" id="Zip-Code" type="number" name="zip-code">
+                            </label>
+                            <label class="label" for="Phone-Number">Phone Number
+                                <input class="form style" id="Phone-Number" type="number">
+                            </label>
+                        </div>
+                        <button type="button" id="update-btn">Update</button>
+                    </form>
                 </div>
             </div>
        </div>
