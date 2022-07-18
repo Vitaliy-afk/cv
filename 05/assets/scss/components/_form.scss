@@ -1,38 +1,42 @@
 .form-row {
     display: flex;
     margin: 0 -15px;
+    justify-content: center;
+    gap: 15px;
     .columns {
-        flex: 0 0 50%;
-        max-width: 50%;
+        max-width: 570px;
         padding: 0 15px;
+        background: #FFFFFF;
+        &.profile {
+            > div {
+                display: flex;
+            }
+        }
     }
+}
+
+.form-acc {
+    border-radius: 6px;
 }
 
 .form-rows {
     display: flex;
 }
 
-input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    background: #FFFFFF;
-    &:checked + label {
-	    text-decoration: line-through;
-    }
-   
-}
+
   
 .select-country{
     display: flex;
 }
 
-// label {
-//     padding-left: 35px;
-//     font-weight: 400;
-//     font-size: 18px;
-//     line-height: 21px;
-//     display: block;
-// }
+label {
+    // transition: all 0.25s ease;
+    // -webkit-backface-visibility: hidden;
+    // pointer-events: none;
+    font-size: 22px;
+    font-size: 18px;
+    display: block;
+}
 
 // #submit-btn {
 //     background: #4A4F56;

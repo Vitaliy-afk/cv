@@ -13,14 +13,14 @@
        <div class="container">
             <div class="form-row">
                 <div class="columns creat-acc">
-                    <form class="shop-check" action="#" method="GET">
+                    <form class="form-acc" action="#" method="GET">
                         <h1>Create an Account</h1>
                         <div class="form-rows">
                             <label class="label" for="first-tname">First Name
-                                <input type="firs-tname" name="one" value="one">
+                                <input type="text" name="text">
                             </label>
                             <label class="label" for="last-name">Last Name
-                                <input type="last-name" name="one" value="one">
+                                <input type="last-name" name="text">
                             </label>
                         </div>
                         <label class="label" for="e-mail">E-mail
@@ -65,46 +65,47 @@
                     <div>
                         <div class="photo-profile">
                             <img src="./assets/image/📷 Image.png" alt="prof-image">
-                            <div class="content-container">
-                                <label class="upload-btn" for="photo-upload">Securely take a photo </label>
-                                <input id="photo-upload" class="photoinput" capture="camera" type="file">
-                            </div>
-                            <form class="shop-check" action="#" method="GET">
-                                <div class="form-rows">
-                                 <label class="label" for="first-tname">First Name
-                                        <input type="firs-tname" name="one" value="one">
-                                    </label>
-                                    <label class="label" for="last-name">Last Name
-                                        <input type="last-name" name="one" value="one">
-                                    </label>
-                                </div>
-                                <div class="select-country">
-                                    <div class="select-wrapper">
-                                        <label for="name">Country</label>
-                                        <select name="country" class="custom-select">
-                                            <option>Ukraine</option>
-                                            <option>Poland</option>
-                                            <option>Sweden</option>
-                                            <option>Spain</option>
-                                        </select>
-                                        <span class="custom-arrow"></span>
-                                    </div>
-                                    <div class="select-wrapper">
-                                        <label for="city">City</label>
-                                        <input type="city" name="one" value="one">
-                                    </div>
-                                </div>
-                                <div class="form-rows">
-                                    <label class="label" for="Zip-Code">Zip Code
-                                        <input type="Zip-Code" name="zip-code" value="one">
-                                    </label>
-                                    <label class="label" for="Phone Number">Phone Number
-                                        <input type=">Phone-Number" name="one" value="one" type="number">
-                                    </label>
-                                </div>
-                                <button type="submit" id="submit-btn">Update</button>
-                            </form>
                         </div>
+                        <div class="content-container">
+                            <label class="upload-btn" for="photo-upload">Securely take a photo </label>
+                            <input id="photo-upload" class="photoinput" capture="camera" type="file">
+                        </div>
+                    </div>
+                        <form class="form-acc" action="#" method="GET">
+                            <div class="form-rows">
+                                <label class="label" for="first-tname">First Name
+                                    <input type="firs-tname" name="one" value="one">
+                                </label>
+                                <label class="label" for="last-name">Last Name
+                                    <input type="last-name" name="one" value="one">
+                                </label>
+                            </div>
+                            <div class="select-country">
+                                <div class="select-wrapper">
+                                    <label for="name">Country</label>
+                                    <select name="country" class="custom-select">
+                                        <option>Ukraine</option>
+                                        <option>Poland</option>
+                                        <option>Sweden</option>
+                                        <option>Spain</option>
+                                    </select>
+                                    <span class="custom-arrow"></span>
+                                </div>
+                                <div class="select-wrapper">
+                                    <label for="city">City</label>
+                                    <input type="city" name="one" value="one">
+                                </div>
+                            </div>
+                            <div class="form-rows">
+                                <label class="label" for="Zip-Code">Zip Code
+                                    <input type="Zip-Code" name="zip-code" value="one">
+                                </label>
+                                <label class="label" for="Phone Number">Phone Number
+                                    <input type=">Phone-Number" name="one" value="one" type="number">
+                                </label>
+                            </div>
+                            <button type="submit" id="submit-btn">Update</button>
+                        </form>
                     </div>
                 </div>
             </div>

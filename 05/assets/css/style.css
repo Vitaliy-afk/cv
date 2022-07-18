@@ -539,7 +539,7 @@ input[type=submit] {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #FFFFFF;
+  color: #1C1C1C;
   font-size: 18px;
   letter-spacing: normal;
   background: #E5E5E5;
@@ -565,13 +565,24 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0 -15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
 }
 .form-row .columns {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
-  max-width: 50%;
+  max-width: 570px;
   padding: 0 15px;
+  background: #FFFFFF;
+}
+.form-row .columns.profile > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-acc {
+  border-radius: 6px;
 }
 
 .form-rows {
@@ -580,19 +591,16 @@ body {
   display: flex;
 }
 
-input[type=checkbox] {
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
-}
-input[type=checkbox]:checked + label {
-  text-decoration: line-through;
-}
-
 .select-country {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+label {
+  font-size: 22px;
+  font-size: 18px;
+  display: block;
 }
 
 .shop-list {
