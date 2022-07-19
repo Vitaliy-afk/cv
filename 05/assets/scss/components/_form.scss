@@ -140,9 +140,7 @@
 
         }
     }
-    #trash{
-        display: none;
-    }
+    
     .delete {
         transform: translate(7px, 0px);
         &:before {
@@ -179,6 +177,10 @@
         }
     }
     
+}
+
+#trash {
+    border: none;
 }
 
 .terms {
@@ -259,7 +261,7 @@
     li {
         display: flex;
         padding-right: 50px;
-        .checkbox {
+        .radio {
             border-radius: 10px;
         }
     }

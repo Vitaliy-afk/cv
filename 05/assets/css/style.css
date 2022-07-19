@@ -652,9 +652,6 @@ body {
   background-repeat: no-repeat;
   margin-bottom: 10px;
 }
-.content-container #trash {
-  display: none;
-}
 .content-container .delete {
   -webkit-transform: translate(7px, 0px);
       -ms-transform: translate(7px, 0px);
@@ -677,6 +674,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .form-rows li:nth-child(1) .input {
   width: 243px;
@@ -684,6 +684,10 @@ body {
 }
 .form-rows li:nth-child(2) .input {
   width: 245px;
+}
+
+#trash {
+  border: none;
 }
 
 .terms {
@@ -769,7 +773,7 @@ body {
   display: flex;
   padding-right: 50px;
 }
-.select-gender li .checkbox {
+.select-gender li .radio {
   border-radius: 10px;
 }
 .select-gender input[type=radio] {
