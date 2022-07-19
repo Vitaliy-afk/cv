@@ -683,7 +683,6 @@ body {
   margin-right: 12px;
 }
 .form-rows li:nth-child(2) .input {
-  width: 100%;
   width: 245px;
 }
 
@@ -773,12 +772,12 @@ body {
 .select-gender li .checkbox {
   border-radius: 10px;
 }
-.select-gender input[type=checkbox] {
+.select-gender input[type=radio] {
   position: absolute;
   left: -9999px;
   opacity: 0;
 }
-.select-gender input[type=checkbox]:checked + label:after {
+.select-gender input[type=radio]:checked + label:after {
   opacity: 1;
   visibility: visible;
 }

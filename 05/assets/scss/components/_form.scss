@@ -173,7 +173,6 @@
         }
         &:nth-child(2){
             .input{
-                width: 100%;
                 width: 245px;
             }
         }
@@ -263,7 +262,7 @@
             border-radius: 10px;
         }
     }
-    input[type="checkbox"] {
+    input[type="radio"] {
         position: absolute;
         left: -9999px;
         opacity: 0;
