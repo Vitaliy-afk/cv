@@ -9,14 +9,15 @@
         padding: 0 15px;
     }
     .columns {
-        padding: 36px 35px 20px 34px;
         background: #FFFFFF;
+        min-height: 590px;
+        padding: 36px 35px 0 34px;
         &.profile {
             > div {
                 display: flex;
                 padding-bottom: 11px;
             }
-            #update-btn{
+            #update-btn {
                 font-weight: 500;
                 font-size: 15px;
                 line-height: 22px;
@@ -29,9 +30,7 @@
                 background: #007BFF;
                 border: 1px solid #E4E4E4;
                 border-radius: 6px;
-                width: 150px;
-                padding: 8px 10px;
-                margin-bottom: 85px;
+                padding: 8px 50px;
                 transition: background .1s ease-in;
                 &:hover {
                     background: #2e465f;
@@ -43,21 +42,19 @@
        
     }
     h1, h2 {
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 24px;
         line-height: 32px;
         padding-bottom: 25px;
     }
     span {
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 400;
         font-size: 13px;
         line-height: 18px;
         letter-spacing: -0.1px;
         color: #969696;
+        display: block;
+        margin: -15px 0 25px;
     }
 }
 
@@ -67,8 +64,6 @@
         border: none;
         outline: none;
         min-height: 38px;
-        font-family: 'Roboto';
-        font-style: normal;
         font-weight: 500;
         font-size: 15px;
         line-height: 22px;
@@ -125,9 +120,9 @@
         display: none;
     }
     
-    input[type="file"] {
-        opacity: 0;
-    }
+    // input[type="file"] {
+    //     opacity: 0;
+    // }
     .upload-btn {
         font-weight: 400;
         font-size: 13px;
@@ -136,11 +131,12 @@
         color: #969696;
         &:before {
             content: '';
-            background-image: url('../assets/image/down-photo.png');
+            background-image: url('../image/down-photo.png');
             width: 138px;
             height: 30px;
             display: block;
             background-repeat: no-repeat;
+            margin-bottom: 10px;
 
         }
     }
@@ -151,7 +147,7 @@
         transform: translate(7px, 0px);
         &:before {
             content: '';
-            background-image: url('../assets/image/Righticon.png');
+            background-image: url('../image/Righticon.png');
             width: 30px;
             height: 30px;
             display: block;
@@ -163,7 +159,6 @@
 
 .form-acc {
     border-radius: 6px;
-    
 }
 
 .form-rows {
@@ -206,7 +201,6 @@
         line-height: 18px;
         text-align: center;
         letter-spacing: -0.1px;
-        
         color: #007BFF;
         &:hover{
             text-decoration: underline
@@ -229,7 +223,7 @@
        
         &:after {
             position: absolute;
-            background-image: url('/assets/image/Arrows.png');
+            background-image: url('../image/Arrows.png');
             top: 38px;
             width: 1em;
             height: 1em;
@@ -248,25 +242,22 @@
     border: 1px solid #E4E4E4;
     border-radius: 6px;
     display: block;
-    padding: 7px 10px;
+    padding: 8px 10px;
     width: 100%;
-    margin-bottom: 25px;
-    margin-top: 5px;
+    margin: 10px 0 18px;
     
 }
 .select-gender {
     @extend %listreset;
     display: flex;
-    margin-bottom: 23px;
+    margin-bottom: 15px;
     li {
         display: flex;
-        flex-direction: column-reverse;
         padding-right: 50px;
         .checkbox {
             border-radius: 10px;
         }
     }
-
 }
 
 label {
@@ -280,7 +271,6 @@ label {
     /* identical to box height, or 147% */
     display: block;
     letter-spacing: -0.2px;
-    
     color: #545454;
 }
 

@@ -521,8 +521,9 @@ body {
   padding: 0 15px;
 }
 .form-row .columns {
-  padding: 36px 35px 20px 34px;
   background: #FFFFFF;
+  min-height: 590px;
+  padding: 36px 35px 0 34px;
 }
 .form-row .columns.profile > div {
   display: -webkit-box;
@@ -543,9 +544,7 @@ body {
   background: #007BFF;
   border: 1px solid #E4E4E4;
   border-radius: 6px;
-  width: 150px;
-  padding: 8px 10px;
-  margin-bottom: 85px;
+  padding: 8px 50px;
   -webkit-transition: background 0.1s ease-in;
   -o-transition: background 0.1s ease-in;
   transition: background 0.1s ease-in;
@@ -554,21 +553,19 @@ body {
   background: #2e465f;
 }
 .form-row h1, .form-row h2 {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
   padding-bottom: 25px;
 }
 .form-row span {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   letter-spacing: -0.1px;
   color: #969696;
+  display: block;
+  margin: -15px 0 25px;
 }
 
 .create-acc #sign-btn {
@@ -576,8 +573,6 @@ body {
   border: none;
   outline: none;
   min-height: 38px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
@@ -641,9 +636,6 @@ body {
 .content-container #photo-upload {
   display: none;
 }
-.content-container input[type=file] {
-  opacity: 0;
-}
 .content-container .upload-btn {
   font-weight: 400;
   font-size: 13px;
@@ -653,11 +645,12 @@ body {
 }
 .content-container .upload-btn:before {
   content: "";
-  background-image: url("../assets/image/down-photo.png");
+  background-image: url("../image/down-photo.png");
   width: 138px;
   height: 30px;
   display: block;
   background-repeat: no-repeat;
+  margin-bottom: 10px;
 }
 .content-container #trash {
   display: none;
@@ -669,7 +662,7 @@ body {
 }
 .content-container .delete:before {
   content: "";
-  background-image: url("../assets/image/Righticon.png");
+  background-image: url("../image/Righticon.png");
   width: 30px;
   height: 30px;
   display: block;
@@ -738,7 +731,7 @@ body {
 }
 .select-country .country-arrows:after {
   position: absolute;
-  background-image: url("/assets/image/Arrows.png");
+  background-image: url("../image/Arrows.png");
   top: 38px;
   width: 1em;
   height: 1em;
@@ -754,26 +747,21 @@ body {
   border: 1px solid #E4E4E4;
   border-radius: 6px;
   display: block;
-  padding: 7px 10px;
+  padding: 8px 10px;
   width: 100%;
-  margin-bottom: 25px;
-  margin-top: 5px;
+  margin: 10px 0 18px;
 }
 
 .select-gender {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 23px;
+  margin-bottom: 15px;
 }
 .select-gender li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
   padding-right: 50px;
 }
 .select-gender li .checkbox {
