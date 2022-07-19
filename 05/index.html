@@ -34,12 +34,12 @@
                             <span>We'll never share your email with anyone else.</span>
                             <ul class="select-gender">
                                 <li> 
-                                    <input class="checkbox" type="checkbox" value="male">
-                                    <label class="label" for="checkbox">Male
+                                    <input class="checkbox" type="checkbox" id="checkbox-male" value="Male">
+                                    <label class="label" for="checkbox-male">Male</label>
                                 </li>
                                 <li>
-                                    <input class="checkbox" type="checkbox" value="Famale">
-                                    <label class="label" for="checkbox">Famele
+                                    <input class="checkbox" type="checkbox" id="checkbox-famale" value="Famale">
+                                    <label class="label" for="checkbox-famale">Famele</label>
                                 </li>
                             </ul>
                             <div class="select-country">
@@ -97,22 +97,22 @@
                         <form class="form-acc" action="#" method="GET">
                             <ul class="form-rows">
                                 <li>
-                                    <label class="label" for="name">Name
-                                        <input class="input style" id="name" type="text">
+                                    <label class="label" for="sname">Name
+                                        <input class="input style" id="sname" type="text">
                                     </label>
                                 </li>
                                 <li>
-                                    <label class="label" for="email">Email
-                                        <input class="input style" id="email" type="text">
+                                    <label class="label" for="semail">Email
+                                        <input class="input style" id="semail" type="text">
                                     </label>
                                 </li>
                             </ul>
                             <div class="select-country">
                                 <ul class="form-rows country">
                                     <li>
-                                        <label for="country" class="country-arrows">Country</label>
-                                        <select id="country" name="country" class="input style" required="">
-                                            <option value="" disabled="" selected="">Select</option>
+                                        <label for="scountry" class="country-arrows">Country</label>
+                                        <select id="scountry" name="country" class="input style">
+                                            <option value="select">Select</option>
                                             <option value="Ukraine">Ukraine</option>
                                             <option value="Spain">Spain</option>
                                             <option value="Sweden">Sweden</option>
@@ -120,8 +120,8 @@
                                         </select>
                                     </li>
                                     <li>
-                                        <label for="city">City</label>
-                                        <input class="input style" id="city" type="text" name="city">
+                                        <label for="scity">City</label>
+                                        <input class="input style" id="scity" type="text" name="city">
                                     </li>
                                 </ul>
                             </div>
@@ -132,8 +132,8 @@
                                     </label>
                                 </li>
                                 <li>
-                                    <label class="label" for="email">Phone Number
-                                        <input class="input style" id="email" type="number">
+                                    <label class="label" for="phone">Phone Number
+                                        <input class="input style" id="phone" type="number">
                                     </label>
                                 </li>
                             </ul>
