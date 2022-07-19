@@ -230,7 +230,7 @@
             background-size: 100%;
             background-position: 50% 50%;
             background-repeat: no-repeat;
-            right: 15px;
+            right: 22px;
             cursor: pointer;
             
         }
@@ -245,6 +245,11 @@
     padding: 8px 10px;
     width: 100%;
     margin: 10px 0 18px;
+    outline: none;
+    &:focus {
+        border: 1px solid #007BFF;;
+        box-shadow: 1px 1px 1px 0 #007BFF;
+    }
     
 }
 .select-gender {
@@ -256,6 +261,50 @@
         padding-right: 50px;
         .checkbox {
             border-radius: 10px;
+        }
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        left: -9999px;
+        opacity: 0;
+        &:checked + label {
+            &:after {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    .label {
+       padding-left: 30px;
+        position: relative;
+        &:before, &:after {
+            display: inline-block;
+            content: '';
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #E4E4E4;
+            border-radius: 20px;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            background: #007BFF;
+            width: 1em;
+            height: 1em;
+            border-radius: 20px;
+            background-size: 100%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            left: 3px;
+            opacity: 0;
+            visibility: hidden;
+            
         }
     }
 }

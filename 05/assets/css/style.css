@@ -738,7 +738,7 @@ body {
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  right: 15px;
+  right: 22px;
   cursor: pointer;
 }
 
@@ -750,6 +750,12 @@ body {
   padding: 8px 10px;
   width: 100%;
   margin: 10px 0 18px;
+  outline: none;
+}
+.input:focus {
+  border: 1px solid #007BFF;
+  -webkit-box-shadow: 1px 1px 1px 0 #007BFF;
+          box-shadow: 1px 1px 1px 0 #007BFF;
 }
 
 .select-gender {
@@ -766,6 +772,47 @@ body {
 }
 .select-gender li .checkbox {
   border-radius: 10px;
+}
+.select-gender input[type=checkbox] {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+.select-gender input[type=checkbox]:checked + label:after {
+  opacity: 1;
+  visibility: visible;
+}
+.select-gender .label {
+  padding-left: 30px;
+  position: relative;
+}
+.select-gender .label:before, .select-gender .label:after {
+  display: inline-block;
+  content: "";
+}
+.select-gender .label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E4E4E4;
+  border-radius: 20px;
+}
+.select-gender .label:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  background: #007BFF;
+  width: 1em;
+  height: 1em;
+  border-radius: 20px;
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  left: 3px;
+  opacity: 0;
+  visibility: hidden;
 }
 
 label {
