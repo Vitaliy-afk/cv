@@ -164,6 +164,7 @@
 .form-rows {
     @extend %listreset;
     display: flex;
+    align-items: center;
     li {
         &:nth-child(1){
             .input{
