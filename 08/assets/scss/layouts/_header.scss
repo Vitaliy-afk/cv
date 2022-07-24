@@ -1,0 +1,49 @@
+.header {
+    padding: 10px 0 110px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    @extend %listreset;
+    align-items: center;
+    li {
+        &:first-child {
+            font-family: 'Tourney';
+            font-weight: 600;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 18px;
+        }
+        &:nth-child(2){
+            padding-left: 58px;
+        }
+        &:last-child {
+            font-family: 'Staala';
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
+            letter-spacing: 0.05em;
+        }
+    }
+    a {
+        
+        text-decoration: none;
+        color: #000000;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+    
+    
+}
+
+.logo {
+    margin-left: auto;
+}
