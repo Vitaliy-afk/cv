@@ -35,13 +35,14 @@ div {
 	ul {
 		@extend %listreset;
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 		li {
 			&:not(:last-child){
 				padding-right: 20px;
 			}
 			a {
 				color: $white;
-				padding: 20px;
 				background: rgb(37, 98, 126);
 				display: block;
 				text-decoration: none;
