@@ -38,9 +38,7 @@ div {
 		flex-wrap: wrap;
 		justify-content: space-between;
 		li {
-			&:not(:last-child){
-				padding-right: 20px;
-			}
+			
 			a {
 				color: $white;
 				background: rgb(37, 98, 126);
