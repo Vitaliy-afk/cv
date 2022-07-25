@@ -1,0 +1,48 @@
+footer {
+    background: #16133D;
+    border-radius: 0px;
+    padding: 42px 0 50px 0;
+    .logo-block{
+        padding-bottom: 32px;
+    }
+}
+
+.logo-svg {
+    .text-path {
+        fill: $white;
+    }
+}
+
+.social-list {
+    @extend %listreset;
+    display: flex;
+
+    li {
+        &:not(:last-child){
+            padding-right: 10px;
+        }
+        
+    }
+
+
+}
+
+.social-svgblock {
+    background: #EFEEF3;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px;
+    &.sec {
+        padding: 10px 14px 9.33px 14px;
+    }
+}
+
+.social-svg {
+    &:hover {
+        path {
+            stroke: rgb(92, 23, 221);
+        }
+    }
+}

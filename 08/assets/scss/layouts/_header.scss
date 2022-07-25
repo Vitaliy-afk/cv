@@ -1,49 +1,36 @@
 .header {
-    padding: 10px 0 110px;
-}
-
-.header-top {
-    display: flex;
-    align-items: center;
-}
-
-.header-list {
-    display: flex;
-    @extend %listreset;
-    align-items: center;
-    li {
-        &:first-child {
-            font-family: 'Tourney';
-            font-weight: 600;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 18px;
-        }
-        &:nth-child(2){
-            padding-left: 58px;
-        }
-        &:last-child {
-            font-family: 'Staala';
-            font-weight: 400;
-            font-size: 22px;
-            line-height: 28px;
-            letter-spacing: 0.05em;
-        }
-    }
-    a {
+    padding: 22px 0 22px 0;
+    position: relative;
+    &:before {
+        content: '';
+        background-image: url("data:image/svg+xml,%3Csvg width='1440' height='1' viewBox='0 0 1440 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='0.5' x2='1440' y2='0.5' stroke='%23EFEEF3'/%3E%3C/svg%3E");
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 1px;
+        width: 100%;
         
-        text-decoration: none;
-        color: #000000;
-        &:hover {
-            text-decoration: underline;
-        }
     }
-    
-    
-    
 }
 
-.logo {
-    margin-left: auto;
+
+.logo-svg {
+    &:hover {
+        .el-path {
+            transition: fill .3s ease-in;
+            fill: rgb(92, 23, 221);
+        }
+    }
+}
+
+
+
+.logo-text {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 35px;
+    color: #16133D;
+    padding-left: 15px;
 }
