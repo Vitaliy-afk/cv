@@ -1,5 +1,5 @@
 .header {
-	padding: 25px 0 70px 0;
+	padding: 18px 0 70px 0;
 }
 
 
@@ -43,6 +43,7 @@
 .buttons-list {
 	display: flex;
 	@extend %listreset;
+	margin-right: -5px;
 	li {
 		&:not(:last-child){
 			padding-right: 30px;

@@ -657,7 +657,7 @@ input[type=submit] {
 }
 
 .header {
-  padding: 25px 0 70px 0;
+  padding: 18px 0 70px 0;
 }
 
 .header-top {
@@ -705,6 +705,7 @@ input[type=submit] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: -5px;
 }
 .buttons-list li:not(:last-child) {
   padding-right: 30px;
