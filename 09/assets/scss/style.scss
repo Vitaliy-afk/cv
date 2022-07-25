@@ -11,11 +11,13 @@
 @import "./base/variables";
 @import "./base/reset";
 
-@import "./components/first-screen";
 
 
 @import "./base/forms";
 @import "./base/helpers";
+
+@import "./components/first-screen";
+
 
 @import "./layouts/header";
 @import "./layouts/common";

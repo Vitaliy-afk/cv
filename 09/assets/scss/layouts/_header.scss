@@ -44,36 +44,42 @@
 	display: flex;
 	@extend %listreset;
 	li {
-		
 		&:not(:last-child){
 			padding-right: 30px;
 		}
-		&:nth-child(2){
-			a {
-				background-color: #FF9900;
-				color: $white;
-				transition: background-color .3s ease-in;
-				&:hover {
-					background-color: #9c620b;
-				}
-				padding: 13px 22.5px;
-			}
-			
-		}
-		
-		
-	}
-	a {
-		border: 1px solid #BCD0E5;
-		border-radius: 4px;
-		padding: 13px 26px;
-		text-decoration: none;
-		font-family: 'Montserrat';
-		font-style: normal;
-		font-weight: 600;
-		font-size: 16px;
-		line-height: 20px;
 	}
 }
 
+.btn {
+	display: inline-block;
+	border: 1px solid #BCD0E5;
+	border-radius: 4px;
+	padding: 13px 26px;
+	text-decoration: none;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+}
 
+
+.sign-white {
+	background-color: #fdfdfd;
+	color: #2F281E;
+	transition: background-color .3s ease-in;
+	&:hover {
+		background-color: #9c620b;
+		color: #BCD0E5;
+	}
+	
+}
+
+.sign-orange {
+	background-color: #FF9900;
+	color: $white;
+	transition: background-color .3s ease-in;
+	&:hover {
+		background-color: #9c620b;
+	}
+}
