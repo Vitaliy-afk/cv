@@ -477,13 +477,17 @@ div ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-div ul li:not(:last-child) {
-  padding-right: 20px;
+div ul li {
+  padding-bottom: 20px;
 }
 div ul li a {
   color: #fff;
-  padding: 20px;
   background: #25627e;
   display: block;
   text-decoration: none;
@@ -491,6 +495,8 @@ div ul li a {
   -o-transition: background 0.4s ease-in-out;
   transition: background 0.4s ease-in-out;
   border-radius: 30px;
+  font-size: 18px;
+  padding: 10px;
 }
 div ul li a:hover {
   text-decoration: underline;

@@ -38,6 +38,7 @@
         padding: 40px;
         display: flex;
         flex-direction: column;
+        transition: border .3s ease-in;
         &:hover {
             border: 1px solid #52C29D;
         }
