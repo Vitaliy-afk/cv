@@ -38,7 +38,7 @@
         padding: 40px;
         display: flex;
         flex-direction: column;
-        transition: border .5s ease-in;
+        transition: border .3s ease-in;
         &:hover {
             border: 1px solid #52C29D;
         }
@@ -64,11 +64,9 @@
 .services-svg {
     &:hover {
         .hover-odd {
-            transition: fill .5s ease-in;
             fill: #52C29D;
         }
         .hover-even {
-            transition: fill .5s ease-in;
             fill: #007FFC;
         }
     }
@@ -97,7 +95,6 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
-    transition: border .2s ease-in;
     &:hover {
         border: 1px solid rgba(68, 26, 116, 0.747);  
     }

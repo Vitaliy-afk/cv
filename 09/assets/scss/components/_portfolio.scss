@@ -1,0 +1,32 @@
+.portfolio {
+    padding: 100px 0 75px 0;
+    background: #F6F6F6;
+    figure {
+        padding: 50px 0 30px 0;
+    }
+    a {
+        max-width: 255px;
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        text-align: center;
+        display: block;
+        color: #070707;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    
+}
+
+.portfolio-works {
+    padding-bottom: 25px;
+        figure {
+            img {
+                max-width: 100%;
+            }
+        }
+    }

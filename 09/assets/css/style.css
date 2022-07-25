@@ -681,9 +681,6 @@ footer .logo-block {
 
 .social-svg:hover path {
   stroke: #5c17dd;
-  -webkit-transition: stroke 0.3s ease-in;
-  -o-transition: stroke 0.3s ease-in;
-  transition: stroke 0.3s ease-in;
 }
 
 .services {
@@ -708,9 +705,9 @@ footer .logo-block {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: border 0.5s ease-in;
-  -o-transition: border 0.5s ease-in;
-  transition: border 0.5s ease-in;
+  -webkit-transition: border 0.3s ease-in;
+  -o-transition: border 0.3s ease-in;
+  transition: border 0.3s ease-in;
 }
 .services-columns .columns:hover {
   border: 1px solid #52C29D;
@@ -734,15 +731,9 @@ footer .logo-block {
 }
 
 .services-svg:hover .hover-odd {
-  -webkit-transition: fill 0.5s ease-in;
-  -o-transition: fill 0.5s ease-in;
-  transition: fill 0.5s ease-in;
   fill: #52C29D;
 }
 .services-svg:hover .hover-even {
-  -webkit-transition: fill 0.5s ease-in;
-  -o-transition: fill 0.5s ease-in;
-  transition: fill 0.5s ease-in;
   fill: #007FFC;
 }
 
@@ -774,9 +765,6 @@ footer .logo-block {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
-  -webkit-transition: border 0.2s ease-in;
-  -o-transition: border 0.2s ease-in;
-  transition: border 0.2s ease-in;
 }
 .svg-border:hover {
   border: 1px solid rgba(68, 26, 116, 0.747);
