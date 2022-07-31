@@ -45,8 +45,7 @@
     @extend %listreset;
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
-   
+    margin-bottom: 45px;
     li {
         &:not(:last-child){
             padding-right: 5px;
@@ -58,6 +57,20 @@
 .info {
     position: relative;
     margin-bottom: 20px;
+    > div {
+        position: relative;
+        margin-bottom: 30px;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100px;
+            background: #FFCC00;
+            height: 1px;
+            bottom: 0;
+            left: 37%;
+        }
+
+    }
     p {
         font-family: 'Roboto';
         font-style: normal;
@@ -67,17 +80,8 @@
         text-align: center;
         text-transform: capitalize;
         color: #666666;
-        margin-bottom: 55px;
-        position: relative;
-        &:before {
-            content: "";
-            position: absolute;
-            height: 1px;
-            width: 100px;
-            background-color: #FFCC00;
-            left: 40%;
-            bottom: -60%;
-        }
+        padding-bottom: 20px;
+     
         
     }
     span {
@@ -88,6 +92,7 @@
         text-align: center;
         text-transform: capitalize;
         color: #666666;
+        margin-bottom: 20px;
     }
 }
 
@@ -101,6 +106,7 @@
     max-width: 430px;
     width: 100%;
     display: inline-block;
+    margin-bottom: 18px;
 }
 
 .btn {
@@ -117,6 +123,7 @@
     border: 1px solid #FFCC00;
     transition: color .5s ease-in;
     transition: background-color .5s ease-in;
+    display: inline-block;
     &:hover {
         color: #e4c54b;
         background-color: #666666;
@@ -184,4 +191,22 @@
 
 .slider-dots {
     @extend %listreset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 23px;
+    li {
+        margin-right: 5px;
+        width: 10px;
+        height: 4px;
+        background: #FFCC00;
+        &.active {
+            width: 20px;
+        }
+
+    }
+    button {
+        display: none;
+    }
 }
