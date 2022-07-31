@@ -642,6 +642,7 @@ body {
   line-height: 18px;
   letter-spacing: -0.1px;
   color: #969696;
+  cursor: pointer;
 }
 .content-container .upload-btn:before {
   content: "";

@@ -1,9 +1,7 @@
 
-
 @import "./base/breakpoints";
 @import "./vendors/include-media";
 @import "./vendors/normalize";
-@import "./vendors/fonts";
 
 
 
@@ -16,7 +14,8 @@
 @import "./base/forms";
 @import "./base/helpers";
 
-@import "./components/first-screen";
+@import "./components/section-head";
+@import "./components/section-slider";
 
 
 @import "./layouts/header";
