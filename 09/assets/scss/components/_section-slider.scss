@@ -6,11 +6,11 @@
     
     &_rows {
         display: flex;
+        flex-wrap: wrap;
     }
     .column-slider {
         max-width: 50%;
         flex: 0 0 50%;
-        flex-wrap: wrap;
         &.left {
             position: relative;
             padding-right: 85px;
