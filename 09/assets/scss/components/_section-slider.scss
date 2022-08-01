@@ -17,12 +17,11 @@
             &::before {
                 content: "";
                 position: absolute;
-                height: 1px;
-                width: 1px;
                 border: 1px solid #FFCC00;
                 top: -70px;
                 opacity: 50%;
                 right: 0;
+                width: 1px;
                 height: 560px;
                 transform: translateX(50%);
             }
@@ -31,12 +30,10 @@
             border: 1px solid #FFCC00;
             position: relative;
         }   
-    
 
         &.right {
             text-align: center;
             padding-left: 85px;
-            
         }
     }
 }
@@ -51,7 +48,6 @@
             padding-right: 5px;
         }
     }
-   
 }
 
 .info {
