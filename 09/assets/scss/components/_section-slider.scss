@@ -86,6 +86,11 @@
         text-transform: capitalize;
         color: #666666;
         padding-bottom: 20px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
     }
     p {
         font-family: 'Raleway';
@@ -96,6 +101,11 @@
         text-transform: capitalize;
         color: #666666;
         margin-bottom: 20px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
     }
 }
 

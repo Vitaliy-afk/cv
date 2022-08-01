@@ -483,11 +483,17 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 50px;
 }
 .section-head_subtitle p {
-  text-transform: uppercase;
+  font-family: "Raleway";
   font-weight: 500;
   font-size: 18px;
+  text-transform: uppercase;
   line-height: 24px;
   margin-bottom: 15px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
 }
 .section-head_subtitle h1 {
   font-family: "Roboto";
@@ -499,6 +505,11 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #FFCC00;
   margin-bottom: 30px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
 }
 
 .section-slider .container {
@@ -590,6 +601,11 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   color: #666666;
   padding-bottom: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
 }
 .info p {
   font-family: "Raleway";
@@ -600,6 +616,11 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   color: #666666;
   margin-bottom: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
 }
 
 .section-slider_text {
