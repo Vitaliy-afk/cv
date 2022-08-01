@@ -60,6 +60,11 @@
     > div {
         position: relative;
         margin-bottom: 30px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
         &:before {
             content: '';
             position: absolute;
@@ -71,7 +76,7 @@
         }
 
     }
-    p {
+    h2 {
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 900;
@@ -81,10 +86,8 @@
         text-transform: capitalize;
         color: #666666;
         padding-bottom: 20px;
-     
-        
     }
-    span {
+    p {
         font-family: 'Raleway';
         font-weight: 400;
         font-size: 24px;
@@ -106,7 +109,7 @@
     max-width: 430px;
     width: 100%;
     display: inline-block;
-    margin-bottom: 18px;
+    margin-bottom: 3px;
 }
 
 .btn {
@@ -133,7 +136,7 @@
 .image-box {
     padding: 15px;
     position: relative;
-    &:after, &::before, span::before, span::after{
+    &:after, &::before, span::before, span::after {
         content: "";
         width: 100px;
         height: 100px;
@@ -173,19 +176,25 @@
     }
 }
 
+
+
+
 .svg {
     &:hover {
         path {
             fill: #333333;
-            
         }
         circle {
-            transition: opacity .5s ease-in;
             fill: #a7a0a0;
             opacity: 50%;
         }
-        
-            stroke: $black;
+    }
+    circle {
+        transition: {
+        property: opacity, fill;
+        duration: .5s;
+        timing-function: ease-in;
+        }
     }
 }
 
@@ -195,18 +204,19 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 23px;
-    li {
-        margin-right: 5px;
-        width: 10px;
-        height: 4px;
-        background: #FFCC00;
-        &.active {
-            width: 20px;
-        }
-
-    }
-    button {
-        display: none;
+    margin-bottom: 18px;
+    
+}
+.button-item {
+    margin-right: 5px;
+    border: none;
+    width: 10px;
+    height: 4px;
+    background-color:  #FFCC00;
+    &.active {
+        width: 20px;
     }
 }
+       
+
+   

@@ -489,7 +489,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 24px;
   margin-bottom: 15px;
 }
-.section-head_subtitle h2 {
+.section-head_subtitle h1 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
@@ -509,14 +509,14 @@ h1, h2, h3, h4, h5, h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .section-slider .column-slider {
   max-width: 50%;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .section-slider .column-slider.left {
   position: relative;
@@ -565,6 +565,11 @@ h1, h2, h3, h4, h5, h6 {
 .info > div {
   position: relative;
   margin-bottom: 30px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
 }
 .info > div:before {
   content: "";
@@ -575,7 +580,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   left: 37%;
 }
-.info p {
+.info h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
@@ -586,7 +591,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #666666;
   padding-bottom: 20px;
 }
-.info span {
+.info p {
   font-family: "Raleway";
   font-weight: 400;
   font-size: 24px;
@@ -607,7 +612,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 430px;
   width: 100%;
   display: inline-block;
-  margin-bottom: 18px;
+  margin-bottom: 3px;
 }
 
 .btn {
@@ -676,18 +681,23 @@ h1, h2, h3, h4, h5, h6 {
   border-right: 1px solid #FFCC00;
 }
 
-.svg:hover {
-  stroke: #333;
-}
 .svg:hover path {
   fill: #333333;
 }
 .svg:hover circle {
-  -webkit-transition: opacity 0.5s ease-in;
-  -o-transition: opacity 0.5s ease-in;
-  transition: opacity 0.5s ease-in;
   fill: #a7a0a0;
   opacity: 50%;
+}
+.svg circle {
+  -webkit-transition-property: opacity, fill;
+  -o-transition-property: opacity, fill;
+  transition-property: opacity, fill;
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
 }
 
 .slider-dots {
@@ -701,19 +711,18 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin-bottom: 23px;
+  margin-bottom: 18px;
 }
-.slider-dots li {
+
+.button-item {
   margin-right: 5px;
+  border: none;
   width: 10px;
   height: 4px;
-  background: #FFCC00;
+  background-color: #FFCC00;
 }
-.slider-dots li.active {
+.button-item.active {
   width: 20px;
-}
-.slider-dots button {
-  display: none;
 }
 
 #wrapper {
