@@ -73,6 +73,7 @@
 
     }
     h2 {
+        @extend %hyphens;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 900;
@@ -82,13 +83,10 @@
         text-transform: capitalize;
         color: #666666;
         padding-bottom: 20px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        -webkit-hyphens: auto;
-        -moz-hyphens: auto;
-        hyphens: auto;
+       
     }
     p {
+        @extend %hyphens;
         font-family: 'Raleway';
         font-weight: 400;
         font-size: 24px;
@@ -97,15 +95,12 @@
         text-transform: capitalize;
         color: #666666;
         margin-bottom: 20px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        -webkit-hyphens: auto;
-        -moz-hyphens: auto;
-        hyphens: auto;
+      
     }
 }
 
 .section-slider_text {
+    @extend %hyphens;
     font-family: 'Raleway';
     font-weight: 500;
     font-size: 14px;
@@ -116,6 +111,7 @@
     width: 100%;
     display: inline-block;
     margin-bottom: 3px;
+   
 }
 
 .btn {

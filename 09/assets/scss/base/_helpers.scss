@@ -19,6 +19,16 @@
 }
 
 
+// hyphens
+
+%hyphens {
+	word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+}
+
 // transition
 %transition {
 	transition: all 0.3s ease-in-out;

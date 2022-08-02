@@ -441,6 +441,14 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
+.section-slider_text, .info p, .info h2, .section-head_subtitle h1, .section-head_subtitle p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
+}
+
 .ellipsis {
   white-space: nowrap;
   /* 1 */
@@ -489,11 +497,6 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   line-height: 24px;
   margin-bottom: 15px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-      hyphens: auto;
 }
 .section-head_subtitle h1 {
   font-family: "Roboto";
@@ -505,11 +508,6 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #FFCC00;
   margin-bottom: 30px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-      hyphens: auto;
 }
 
 .section-slider .container {
@@ -600,11 +598,6 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   color: #666666;
   padding-bottom: 20px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-      hyphens: auto;
 }
 .info p {
   font-family: "Raleway";
@@ -615,11 +608,6 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   color: #666666;
   margin-bottom: 20px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-  -ms-hyphens: auto;
-      hyphens: auto;
 }
 
 .section-slider_text {
