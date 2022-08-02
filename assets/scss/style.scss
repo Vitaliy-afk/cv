@@ -36,18 +36,22 @@ div {
 		@extend %listreset;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: center;
 		li {
 			padding-bottom: 20px;
+			&:not(:last-child){
+				padding-right: 10px;
+			}
+
 			a {
 				color: $white;
 				background: rgb(37, 98, 126);
-				display: block;
 				text-decoration: none;
 				transition: background 0.4s ease-in-out;
 				border-radius: 30px;
 				font-size: 18px;
-				padding: 10px;
+				padding: 15px;
+				display: inline-block;
 				&:hover {
 					text-decoration: underline;
 					background: rgb(16, 45, 83);

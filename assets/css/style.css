@@ -479,24 +479,27 @@ div ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 div ul li {
   padding-bottom: 20px;
 }
+div ul li:not(:last-child) {
+  padding-right: 10px;
+}
 div ul li a {
   color: #fff;
   background: #25627e;
-  display: block;
   text-decoration: none;
   -webkit-transition: background 0.4s ease-in-out;
   -o-transition: background 0.4s ease-in-out;
   transition: background 0.4s ease-in-out;
   border-radius: 30px;
   font-size: 18px;
-  padding: 10px;
+  padding: 15px;
+  display: inline-block;
 }
 div ul li a:hover {
   text-decoration: underline;
