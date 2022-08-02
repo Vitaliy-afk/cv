@@ -536,12 +536,11 @@ h1, h2, h3, h4, h5, h6 {
 .section-slider .column-slider.left::before {
   content: "";
   position: absolute;
-  height: 1px;
-  width: 1px;
   border: 1px solid #FFCC00;
   top: -70px;
   opacity: 50%;
   right: 0;
+  width: 1px;
   height: 560px;
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
@@ -702,8 +701,13 @@ h1, h2, h3, h4, h5, h6 {
   border-right: 1px solid #FFCC00;
 }
 
+.svg path {
+  -webkit-transition: fill 0.5s ease-in;
+  -o-transition: fill 0.5s ease-in;
+  transition: fill 0.5s ease-in;
+}
 .svg:hover path {
-  fill: #333333;
+  fill: #4e4d4a;
 }
 .svg:hover circle {
   fill: #a7a0a0;
