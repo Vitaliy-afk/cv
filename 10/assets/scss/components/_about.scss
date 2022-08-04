@@ -47,6 +47,7 @@
 .card__list {
     @extend %listreset;
     display: flex;
+    flex-wrap: wrap;
     column-gap: 30px;
     &.list {
         .list__item {
