@@ -628,7 +628,11 @@ h1, h2, h3, h4, h5, h6 {
 .social__list__item:not(:last-child) {
   margin-right: 5px;
 }
+.social__list__item a {
+  display: inline-block;
+}
 .social__list__item span {
+  display: inline-block;
   padding: 5px;
   background-color: #5DCBE6;
   color: #F6F6F6;
@@ -684,7 +688,6 @@ body {
           align-items: center;
 }
 .header__logo {
-  width: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -720,6 +723,7 @@ body {
   -webkit-transition: color 0.5s ease-in-out;
   -o-transition: color 0.5s ease-in-out;
   transition: color 0.5s ease-in-out;
+  display: inline-block;
 }
 .menu__list .list__item a:hover {
   color: #18B5DC;
@@ -766,7 +770,7 @@ footer .logo {
   margin: 0 auto;
 }
 .footer-content .menu {
-  margin-bottom: 35px;
+  margin-bottom: 23px;
   text-align: center;
 }
 .footer-content .menu__list {
@@ -787,6 +791,10 @@ footer .logo {
 }
 .footer-content .social__list__item:not(:last-child) {
   margin-right: 10px;
+}
+.footer-content .social__list__item .icon-linkedin2 {
+  font-size: 24px;
+  padding: 8px;
 }
 .footer-content .social__list__item span {
   padding: 9.88px 10px;

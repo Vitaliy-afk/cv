@@ -7,7 +7,6 @@
 
     }
     &__logo  {
-        width: 100%;
         flex: 1;
         
     }
@@ -39,6 +38,7 @@
                     color: #3C3C3C;
                     text-decoration: none;
                     transition: color .5s ease-in-out;
+                    display: inline-block;
                     &:hover {
                         color: #18B5DC;
                     }

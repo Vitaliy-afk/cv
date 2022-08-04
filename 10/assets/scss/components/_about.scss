@@ -121,7 +121,11 @@
         &:not(:last-child) {
             margin-right: 5px;
         }
+        a {
+            display: inline-block;
+        }
         span {
+            display: inline-block;
             padding: 5px;
             background-color: #5DCBE6;
             color: #F6F6F6;

@@ -11,7 +11,7 @@ footer {
     width: 100%;
     margin: 0 auto;
     .menu {
-        margin-bottom: 35px;
+        margin-bottom: 23px;
         text-align: center;
         &__list {
             flex-wrap: nowrap;
@@ -32,6 +32,10 @@ footer {
         &__item {
             &:not(:last-child) {
                 margin-right: 10px;
+            }
+            .icon-linkedin2 {
+                font-size: 24px;
+                padding: 8px;
             }
             span {
                 padding: 9.88px 10px;
