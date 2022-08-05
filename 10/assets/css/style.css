@@ -935,6 +935,10 @@ footer .logo {
     display: inline-block;
     visibility: visible;
     z-index: 999;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 16px;
   }
   .header-menu .menu__list {
     visibility: hidden;
@@ -953,6 +957,7 @@ footer .logo {
             flex-direction: column;
     width: 100%;
     z-index: 100;
+    background-color: #fff;
   }
   .header-menu .menu__list .list__item:not(:last-child) {
     padding-right: 0;
@@ -970,6 +975,9 @@ footer .logo {
             box-shadow: 0 3px 16px #0009;
     border-bottom: 2px solid #18B5DC;
     border-top: 2px solid #18B5DC;
+  }
+  .header__btn {
+    font-size: 12px;
   }
   .about {
     padding: 100px 0 145px;
@@ -993,7 +1001,6 @@ footer .logo {
             box-shadow: 0 3px 16px #0009;
     border-bottom: 2px solid #18B5DC;
     border-top: 2px solid #18B5DC;
-    padding-top: 250px;
   }
   footer .footer-content .menu__list {
     -webkit-box-pack: center;

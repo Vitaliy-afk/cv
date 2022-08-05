@@ -15,6 +15,7 @@
             flex-direction: column;
             width: 100%;
             z-index: 100;
+            background-color: $white;
             .list {
                 &__item {
                     &:not(:last-child){
@@ -34,8 +35,14 @@
                 box-shadow: 0 3px 16px #0009;
                 border-bottom: 2px solid #18B5DC;
                 border-top: 2px solid #18B5DC;
+                
             }
         }
+    }
+}
+.header__btn  {
+    @include media('<860px'){
+        font-size: 12px;
     }
 }
 
@@ -61,7 +68,7 @@
             box-shadow: 0 3px 16px #0009;
             border-bottom: 2px solid #18B5DC;
             border-top: 2px solid #18B5DC;
-            padding-top: 250px;
+            // padding-top: 250px;
         }
     }
    

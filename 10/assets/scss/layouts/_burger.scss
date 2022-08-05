@@ -6,6 +6,8 @@
 		display: inline-block;
 		visibility: visible;
 		z-index: 999;
+		order: 1;
+    	margin-left: 16px;
     }
     @include media ('>860px'){
         display: none;
