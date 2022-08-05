@@ -911,19 +911,13 @@ footer .logo {
         -ms-flex: 50%;
             flex: 50%;
     max-width: 50%;
+    padding-bottom: 20px;
     overflow: hidden;
   }
   .about .card__list.list .list__item__card__block {
     position: relative;
     margin-bottom: 20px;
     height: 38vw;
-  }
-  .about .card__list.list .list__item__card__block img {
-    display: block;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
   }
 }
 
@@ -980,7 +974,7 @@ footer .logo {
     font-size: 12px;
   }
   .about {
-    padding: 100px 0 145px;
+    padding: 100px 0 50px;
   }
   .about__title {
     font-size: 20px;
@@ -1002,6 +996,12 @@ footer .logo {
     border-bottom: 2px solid #18B5DC;
     border-top: 2px solid #18B5DC;
   }
+  .list__item__card__name p {
+    font-size: 14px;
+  }
+  .list__item__card__name span {
+    font-size: 16px;
+  }
   footer .footer-content .menu__list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1016,5 +1016,19 @@ footer .logo {
   }
   footer .footer-content .social__list__item span {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about .card__list.list .list__item {
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+  .about .card__list.list .list__item__card__block {
+    position: relative;
+    margin-bottom: 20px;
+    height: 70vw;
   }
 }

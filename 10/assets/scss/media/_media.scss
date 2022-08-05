@@ -49,7 +49,7 @@
 
 .about {
     @include media('<860px'){
-        padding: 100px 0 145px;
+        padding: 100px 0 50px;
         &__title {
             font-size: 20px;
         }
@@ -84,25 +84,49 @@
                 .list__item {
                     flex: 50%;
                     max-width: 50%;
-                    // padding: 0 15px;
+                    padding-bottom: 20px;
                     overflow: hidden;
                     &__card__block {
                         position: relative;
                         margin-bottom: 20px;
                         height: 38vw;
-                        img {
-                            display: block;
-                            height: 100%;
-                            object-fit: cover;
-                            width: 100%;
-                        }
+                      
                     }
+                }
+            }
+        }
+    }
+    @include media('<=480px'){
+        .card__list {
+            &.list {
+                .list__item {
+                    flex: 100%;
+                    max-width: 100%;
+                    // padding: 0 15px;
+                    &__card__block {
+                        position: relative;
+                        margin-bottom: 20px;
+                        height: 70vw;
+                      
+                    }
+                   
                 }
             }
         }
     }
    
 }
+@include media ('<860px'){
+    .list__item__card__name {
+        p {
+            font-size: 14px;
+        }
+        span {
+            font-size: 16px;
+        }
+    }
+}
+
 
 
 footer {
@@ -114,7 +138,7 @@ footer {
                     .list {
                         &__item {
                             a {
-                            font-size: 14px;
+                                font-size: 14px;
                             }
                         } 
                     }
