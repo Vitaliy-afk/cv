@@ -1,0 +1,129 @@
+.header {
+    position: relative;
+}
+
+.header-menu {
+    .menu__list {
+        @include media ('<860px'){
+            visibility: hidden;
+            transform: translate(0, -100%);
+            flex-wrap: nowrap;
+            padding: 50px;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            flex-direction: column;
+            width: 100%;
+            z-index: 100;
+            .list {
+                &__item {
+                    &:not(:last-child){
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .menu__list  {
+        .burger-active & {
+            @include media('<860px'){
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0, 0);
+                transition: 0.9s;
+                box-shadow: 0 3px 16px #0009;
+                border-bottom: 2px solid #18B5DC;
+                border-top: 2px solid #18B5DC;
+            }
+        }
+    }
+}
+
+
+.about {
+    @include media('<860px'){
+        padding: 100px 0 145px;
+        &__title {
+            font-size: 20px;
+        }
+        &__subtitle {
+            font-size: 14px;
+           
+        }
+       
+    }
+    .burger-active & {
+        @include media('<860px'){
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0, 0);
+            transition: 0.9s;
+            box-shadow: 0 3px 16px #0009;
+            border-bottom: 2px solid #18B5DC;
+            border-top: 2px solid #18B5DC;
+            padding-top: 250px;
+        }
+    }
+   
+}
+
+
+.about {
+    @include media('<=1024px'){
+        .card__list {
+        //    row-gap: 30px;
+            // margin: 0 -15px;
+            &.list {
+                .list__item {
+                    flex: 50%;
+                    max-width: 50%;
+                    // padding: 0 15px;
+                    overflow: hidden;
+                    &__card__block {
+                        position: relative;
+                        margin-bottom: 20px;
+                        height: 38vw;
+                        img {
+                            display: block;
+                            height: 100%;
+                            object-fit: cover;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}
+
+
+footer {
+    .footer-content {
+        @include media ('<860px'){
+            .menu {
+                &__list {
+                    justify-content: center;
+                    .list {
+                        &__item {
+                            a {
+                            font-size: 14px;
+                            }
+                        } 
+                    }
+                }
+            }
+            .social__list {
+                &__item {
+                    .icon-linkedin2 {
+                        font-size: 18px;
+                        padding: 8px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -4,11 +4,9 @@
     &__top {
         display: flex;
         align-items: center
-
     }
     &__logo  {
         flex: 1;
-        
     }
     &__button {
         margin-top: -5px;
@@ -17,7 +15,9 @@
     }
 }
 
-
+.logo_link {
+    display: block;
+}
 
 .menu {
     text-align: center;
@@ -27,6 +27,7 @@
         text-transform: uppercase;
         flex-wrap: wrap;
         .list {
+           
             &__item {
                 a {
                     font-family: 'Lato';
@@ -41,6 +42,9 @@
                     display: inline-block;
                     &:hover {
                         color: #18B5DC;
+                    }
+                    @include media ('<860px'){
+                        font-size: 14px;
                     }
 
                 }
