@@ -1,0 +1,43 @@
+.popular {
+    padding: 0 0 85px;
+}
+
+.popular_row {
+    .item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+}
+.popular_item {
+    &.head {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    
+}
+
+.popular_button{
+        text-align: center;
+        margin-top: 50px;
+        .btn {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            text-transform: capitalize;
+            padding: 9.5px 45px;
+            display: inline-block;
+            text-decoration: none;
+            transition: background-color .5s ease-in;
+            background: #565656;
+            &:hover {
+                background-color: #0d0d0e;
+                color: $white;
+            }
+        }
+    }
+    

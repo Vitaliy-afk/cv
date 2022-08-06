@@ -1,0 +1,37 @@
+.popular_row {
+    .info {
+        
+        p {
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 32px;
+            letter-spacing: 0.05em;
+            color: #565656;
+            margin: 0 0px 35px 100px;
+
+        }   
+        
+    }
+}   
+
+.info_svg {
+    transform: translateY(-10px);
+}
+
+.info_item {
+    &.head {
+        max-width: 470px;
+            @extend %hyphens;
+            font-family: 'Red Hat Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 166%;
+            letter-spacing: 0.1em;
+            color: #000000;
+            margin-bottom: 3px;
+            }
+        
+    }

@@ -1,0 +1,97 @@
+.blog {
+    padding: 0px 0 44px;
+    .blog_item {
+        .blog_item_text {
+            padding-top: 90px;
+            max-width: 480px;
+        }
+    }
+    &.name_title {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.05em;
+        color: #000000;
+    }
+    
+}
+
+
+
+.flex-row {
+    display: flex;
+    margin: 0 -15px;
+    @extend %listreset;
+    > div {
+        padding: 0 15px;
+
+    }
+    &.rev {
+        flex-direction: row-reverse;
+       
+    }
+}
+
+.blog_item {
+    margin-bottom: 36px;
+    &_image {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    &_text {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-top: 50px;
+        
+    }
+    &_label {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: #7B7B7B;
+        margin-bottom: 20px;
+    }
+    &_header {
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: #000000;
+    }
+    &_date {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: #7B7B7B;
+        display: inline-block;
+        margin-bottom: 45px;
+        
+    }
+    &_description {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 166%;
+        letter-spacing: 0.05em;
+        color: #565656;
+        position: relative;
+        
+       
+    }
+    &_arrow {
+        margin-left: 15px;
+    }
+   
+}
+
