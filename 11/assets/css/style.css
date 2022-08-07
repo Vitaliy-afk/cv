@@ -1076,29 +1076,16 @@ body {
 
 @media (min-width: 768px) {
   .post_item.flex-row {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 @media (min-width: 861px) {
   .burger-wrap {
     display: none;
-  }
-}
-
-@media (max-width: 1024px) {
-  .about .card__list.list .list__item {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    max-width: 50%;
-    padding-bottom: 20px;
-    overflow: hidden;
-  }
-  .about .card__list.list .list__item__card__block {
-    position: relative;
-    margin-bottom: 20px;
-    height: 38vw;
   }
 }
 
@@ -1117,9 +1104,9 @@ body {
   }
   .header-menu .menu_list {
     visibility: hidden;
-    -webkit-transform: translate(0, -100%);
-        -ms-transform: translate(0, -100%);
-            transform: translate(0, -100%);
+    -webkit-transform: translate(100%, 0%);
+        -ms-transform: translate(100%, 0%);
+            transform: translate(100%, 0%);
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     padding: 50px;
@@ -1133,6 +1120,13 @@ body {
     width: 100%;
     z-index: 100;
     background-color: #fff;
+    text-align: center;
+  }
+  .header-menu .menu_list .list_item:hover {
+    background-color: #86c1cf;
+  }
+  .header-menu .menu_list .list_item a {
+    font-weight: 800;
   }
   .header-menu .menu_list .list_item:not(:last-child) {
     padding-right: 0;
@@ -1148,8 +1142,8 @@ body {
     transition: 0.9s;
     -webkit-box-shadow: 0 3px 16px #0009;
             box-shadow: 0 3px 16px #0009;
-    border-bottom: 2px solid #18B5DC;
-    border-top: 2px solid #18B5DC;
+    border-bottom: 2px solid #0d1618;
+    border-top: 2px solid #0a1f24;
   }
   .header_btn {
     font-size: 12px;
@@ -1176,27 +1170,6 @@ body {
             box-shadow: 0 3px 16px #0009;
     border-bottom: 2px solid #18B5DC;
     border-top: 2px solid #18B5DC;
-  }
-  .list__item__card__name p {
-    font-size: 14px;
-  }
-  .list__item__card__name span {
-    font-size: 16px;
-  }
-  footer .footer-content .menu__list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  footer .footer-content .menu__list .list__item a {
-    font-size: 14px;
-  }
-  footer .footer-content .social__list__item .icon-linkedin2 {
-    font-size: 18px;
-    padding: 8px;
-  }
-  footer .footer-content .social__list__item span {
-    font-size: 14px;
   }
 }
 
@@ -1280,20 +1253,6 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  .about .card__list.list .list__item {
-    -webkit-box-flex: 100%;
-        -ms-flex: 100%;
-            flex: 100%;
-    max-width: 100%;
-  }
-  .about .card__list.list .list__item__card__block {
-    position: relative;
-    margin-bottom: 20px;
-    height: 70vw;
-  }
-}
-
 @media (max-width: 340px) {
   .blog_item.flex-row {
     display: block;
@@ -1325,7 +1284,10 @@ body {
     padding: 0 15px;
   }
   .popular_row.flex-row {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .popular_row .item {
     max-width: 100%;

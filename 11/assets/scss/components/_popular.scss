@@ -5,7 +5,7 @@
 .popular_row {
     &.flex-row {
         @include media ('<=340px'){
-           display: block;
+          flex-direction: column;
         }
     }
     .item {

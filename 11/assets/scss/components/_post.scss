@@ -22,7 +22,7 @@
 .post_item {
     &.flex-row {
         @include media ('>=768px'){
-            display: block;
+            flex-direction: column;
         }
     }
 }

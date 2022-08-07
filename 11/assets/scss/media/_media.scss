@@ -6,7 +6,7 @@
     .menu_list {
         @include media ('<860px'){
             visibility: hidden;
-            transform: translate(0, -100%);
+            transform: translate(100%, 0%);
             flex-wrap: nowrap;
             padding: 50px;
             position: absolute;
@@ -16,8 +16,16 @@
             width: 100%;
             z-index: 100;
             background-color: $white;
+            text-align: center;
             .list {
                 &_item {
+                    &:hover {
+                        background-color: #86c1cf;
+                    } 
+                    a {
+                        font-weight: 800;
+                      
+                    }
                     &:not(:last-child){
                         padding-right: 0;
                     }
@@ -33,8 +41,8 @@
                 transform: translate(0, 0);
                 transition: 0.9s;
                 box-shadow: 0 3px 16px #0009;
-                border-bottom: 2px solid #18B5DC;
-                border-top: 2px solid #18B5DC;
+                border-bottom: 2px solid #0d1618;
+                border-top: 2px solid #0a1f24;
                 
             }
         }
@@ -75,89 +83,10 @@
 }
 
 
-.about {
-    @include media('<=1024px'){
-        .card__list {
-        //    row-gap: 30px;
-            // margin: 0 -15px;
-            &.list {
-                .list__item {
-                    flex: 50%;
-                    max-width: 50%;
-                    padding-bottom: 20px;
-                    overflow: hidden;
-                    &__card__block {
-                        position: relative;
-                        margin-bottom: 20px;
-                        height: 38vw;
-                      
-                    }
-                }
-            }
-        }
-    }
-    @include media('<=480px'){
-        .card__list {
-            &.list {
-                .list__item {
-                    flex: 100%;
-                    max-width: 100%;
-                    // padding: 0 15px;
-                    &__card__block {
-                        position: relative;
-                        margin-bottom: 20px;
-                        height: 70vw;
-                      
-                    }
-                   
-                }
-            }
-        }
-    }
-   
-}
-@include media ('<860px'){
-    .list__item__card__name {
-        p {
-            font-size: 14px;
-        }
-        span {
-            font-size: 16px;
-        }
-    }
-}
 
 
 
-footer {
-    .footer-content {
-        @include media ('<860px'){
-            .menu {
-                &__list {
-                    justify-content: center;
-                    .list {
-                        &__item {
-                            a {
-                                font-size: 14px;
-                            }
-                        } 
-                    }
-                }
-            }
-            .social__list {
-                &__item {
-                    .icon-linkedin2 {
-                        font-size: 18px;
-                        padding: 8px;
-                    }
-                    span {
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-    }
-}
+
 
 
 .popular_row {
