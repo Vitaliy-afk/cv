@@ -18,8 +18,18 @@
             background-color: $white;
             .list {
                 &__item {
+                    padding: 10px;
+                    &:hover {
+                        background-color: #18B5DC;
+                        color: $white;
+                    }
                     &:not(:last-child){
                         padding-right: 0;
+                    }
+                    a {
+                        &:hover {
+                            color: $white;
+                        }
                     }
                 }
             }

@@ -759,9 +759,6 @@ body {
   -webkit-transition: background-color 0.5s ease-in;
   -o-transition: background-color 0.5s ease-in;
   transition: background-color 0.5s ease-in;
-  -webkit-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out;
 }
 .btn:hover {
   background-color: #18B5DC;
@@ -953,8 +950,18 @@ footer .logo {
     z-index: 100;
     background-color: #fff;
   }
+  .header-menu .menu__list .list__item {
+    padding: 10px;
+  }
+  .header-menu .menu__list .list__item:hover {
+    background-color: #18B5DC;
+    color: #fff;
+  }
   .header-menu .menu__list .list__item:not(:last-child) {
     padding-right: 0;
+  }
+  .header-menu .menu__list .list__item a:hover {
+    color: #fff;
   }
   .burger-active .header-menu .menu__list {
     opacity: 1;
