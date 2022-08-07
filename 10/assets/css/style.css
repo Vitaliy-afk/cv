@@ -1026,6 +1026,12 @@ footer .logo {
   }
 }
 
+@media (max-width: 779px) {
+  footer .menu__list .list__item:not(:last-child) {
+    padding-right: 20px;
+  }
+}
+
 @media (max-width: 480px) {
   .about .card__list.list .list__item {
     -webkit-box-flex: 100%;

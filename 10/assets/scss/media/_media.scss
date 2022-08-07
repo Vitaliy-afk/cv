@@ -78,7 +78,6 @@
             box-shadow: 0 3px 16px #0009;
             border-bottom: 2px solid #18B5DC;
             border-top: 2px solid #18B5DC;
-            // padding-top: 250px;
         }
     }
    
@@ -88,8 +87,6 @@
 .about {
     @include media('<=1024px'){
         .card__list {
-        //    row-gap: 30px;
-            // margin: 0 -15px;
             &.list {
                 .list__item {
                     flex: 50%;
