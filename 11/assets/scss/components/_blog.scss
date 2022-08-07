@@ -1,10 +1,10 @@
 .blog {
     padding: 0px 0 44px;
     .blog_item {
-        .blog_item_text {
-            padding-top: 90px;
-            max-width: 480px;
-        }
+        // .blog_item_text {
+        //     padding-top: 90px;
+        //     max-width: 480px;
+        // }
     }
     &.name_title {
         font-family: 'Red Hat Display';
@@ -18,32 +18,66 @@
     
 }
 
-
+.blog_item_maxw {
+    padding-top: 90px;
+    max-width: 450px;
+    @include media ('<=768px'){
+        padding-top: 0;
+        max-width: 100%;
+    }
+}
 
 .flex-row {
     display: flex;
     margin: 0 -15px;
     @extend %listreset;
+    flex-wrap: wrap;
     > div {
         padding: 0 15px;
 
     }
     &.rev {
         flex-direction: row-reverse;
+        .blog_item_maxw {
+            margin-left: auto;
+        }
        
     }
 }
+
+.blog_item {
+    &.flex-row {
+        @include media ('<=768px'){
+            align-items: flex-end;
+        }
+        @include media ('<=340px'){
+           display: block;;
+        }
+    }
+}
+
 
 .blog_item {
     margin-bottom: 36px;
     &_image {
         flex: 0 0 50%;
         max-width: 50%;
+        @include media ('<=340px'){
+            flex: 0 0 100%;
+            max-width: 100%;
+
+        }
+        
     }
     &_text {
         flex: 0 0 50%;
         max-width: 50%;
         padding-top: 50px;
+        @include media ('<=340px'){
+            flex: 0 0 100%;
+            max-width: 100%;
+            
+        }
         
     }
     &_label {
@@ -75,6 +109,9 @@
         color: #7B7B7B;
         display: inline-block;
         margin-bottom: 45px;
+        @include media ('<=768px'){
+            margin-bottom: 35px;
+        }
         
     }
     &_description {

@@ -1,6 +1,9 @@
+
+.info {
+    padding: 0 0 55px;
+}
 .popular_row {
-    .info {
-        
+    .info_item {
         p {
             font-family: 'Lato';
             font-style: normal;
@@ -9,7 +12,7 @@
             line-height: 32px;
             letter-spacing: 0.05em;
             color: #565656;
-            margin: 0 0px 35px 100px;
+            margin-bottom: 35px;
 
         }   
         
@@ -34,4 +37,9 @@
             margin-bottom: 3px;
             }
         
+    }
+
+    .info_max-w {
+        max-width: 470px;
+        margin-left: auto;
     }

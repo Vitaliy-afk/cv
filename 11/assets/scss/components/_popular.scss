@@ -3,6 +3,25 @@
 }
 
 .popular_row {
+    &.flex-row {
+        @include media ('<=340px'){
+           display: block;
+        }
+    }
+    .item {
+        @include media ('<=340px'){
+            max-width: 100%;
+            flex: 0 0 100%;
+            padding: 0 15px;
+        }
+    }
+   
+}
+
+
+
+
+.popular_row {
     .item {
         flex: 0 0 50%;
         max-width: 50%;

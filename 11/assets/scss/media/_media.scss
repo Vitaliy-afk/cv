@@ -158,3 +158,35 @@ footer {
         }
     }
 }
+
+
+.popular_row {
+    .item {
+        // @include media ('<=768px'){
+        //     flex: 0 0 100%;
+        //     max-width: 100%;
+        //     display: flex;
+        //     margin: 0 -15px;
+            
+        // } 
+       
+    }
+
+}
+// .popular_item {
+//     @include media ('<=768px'){
+//     &.image {
+//         max-width: 50%;
+//         flex: 0 0 50%;
+//         padding: 0 15px;
+//         }
+//     }
+//     @include media ('<=768px'){
+//         &.text {
+//             max-width: 50%;
+//             flex: 0 0 50%;
+//             padding: 0 15px;
+//             }
+//         }
+// }
+
