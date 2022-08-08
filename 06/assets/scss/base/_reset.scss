@@ -5,7 +5,6 @@ html {
 	box-sizing: inherit;
 }
 
-* {max-height: 1000000px;}
 
 body {
 	color: $base-text-color;
@@ -20,7 +19,7 @@ body {
 img {
 	max-width: 100%;
 	height: auto;
-	background-position: center;
+	
 }
 
 // google map fix
