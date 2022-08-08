@@ -1,11 +1,5 @@
 .blog {
     padding: 0px 0 44px;
-    .blog_item {
-        // .blog_item_text {
-        //     padding-top: 90px;
-        //     max-width: 480px;
-        // }
-    }
     &.name_title {
         font-family: 'Red Hat Display';
         font-style: normal;
@@ -48,7 +42,7 @@
 .blog_item {
     &.flex-row {
         @include media ('<=768px'){
-            align-items: flex-end;
+            align-items: flex-start;
         }
         @include media ('<=340px'){
            display: block;;
@@ -62,7 +56,10 @@
     &_image {
         flex: 0 0 50%;
         max-width: 50%;
-        @include media ('<=340px'){
+        img {
+            width: 100%;
+        }
+        @include media ('<768px'){
             flex: 0 0 100%;
             max-width: 100%;
 
@@ -73,7 +70,7 @@
         flex: 0 0 50%;
         max-width: 50%;
         padding-top: 50px;
-        @include media ('<=340px'){
+        @include media ('<768px'){
             flex: 0 0 100%;
             max-width: 100%;
             
