@@ -7,6 +7,9 @@
         line-height: 64px;
         letter-spacing: 0.05em;
         color: #000000;
+        @include media ('<=768px'){
+            font-size: 32px;
+        }
     }
     
 }
@@ -111,12 +114,15 @@
         line-height: 166%;
         letter-spacing: 0.05em;
         color: #565656;
-        position: relative;
+        display: inline-block;
         
        
     }
     &_arrow {
         margin-left: 15px;
+            @include media ('<=768px'){
+            margin-left: 5px;
+        }
     }
    
 }

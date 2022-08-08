@@ -1,6 +1,9 @@
 
 .info {
     padding: 0 0 55px;
+    @include media ('<768px'){
+        padding: 0 0 35px;
+    }
 }
 .popular_row {
     .info_item {
@@ -13,6 +16,10 @@
             letter-spacing: 0.05em;
             color: #565656;
             margin-bottom: 35px;
+            @include media ('<768px'){
+                font-size: 16px;
+                line-height: 1.7;
+            }
 
         }   
         
@@ -25,7 +32,6 @@
 
 .info_item {
     &.head {
-        max-width: 470px;
             @extend %hyphens;
             font-family: 'Red Hat Display';
             font-style: normal;
@@ -35,11 +41,18 @@
             letter-spacing: 0.1em;
             color: #000000;
             margin-bottom: 3px;
+            @include media ('<768px'){
+                font-size: 18px;
             }
+        }
         
     }
 
     .info_max-w {
         max-width: 470px;
         margin-left: auto;
+        @include media ('<768px'){
+            max-width: 100%;
+            margin-left: 0;
+        }
     }

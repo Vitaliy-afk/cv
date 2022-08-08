@@ -25,6 +25,14 @@
     
 }
 
+
+.footer {
+    .blog {
+        &.name_title {
+            padding-bottom: 10px;
+        }
+    }
+}
 .footer {
     
     .flex-row {
@@ -40,6 +48,15 @@
     }
 }
 
+
+.footer {
+    .blog_item_link {
+        transform: translate(-15px, -10px);
+        display: inline-block;
+    }
+}
+
+
 .footer_item {
     &.item {
         flex: 0 0 50%;
@@ -54,6 +71,8 @@
     }
     
 }
+
+
 
 .footer {
     &_social_list {
@@ -75,7 +94,6 @@
 }
 
 .social_list {
-   
     justify-content: end;
     align-items: center;
     &_item {
@@ -100,6 +118,9 @@
         }
     }
 }
+
+
+
 
 .footer_copyright {
     text-align: center;

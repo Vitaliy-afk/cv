@@ -521,7 +521,6 @@ h1, h2, h3, h4, h5, h6 {
 .blog.name_title {
   font-family: "Red Hat Display";
   font-style: normal;
-  font-weight: 400;
   font-size: 48px;
   line-height: 64px;
   letter-spacing: 0.05em;
@@ -575,8 +574,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog_item_label {
   font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 166%;
   letter-spacing: 0.1em;
@@ -585,7 +582,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog_item_header {
   font-family: "Red Hat Display";
-  font-style: normal;
   font-weight: 500;
   font-size: 23px;
   line-height: 166%;
@@ -594,8 +590,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog_item_date {
   font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 166%;
   letter-spacing: 0.1em;
@@ -605,13 +599,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog_item_description {
   font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 166%;
   letter-spacing: 0.05em;
   color: #565656;
-  position: relative;
+  display: inline-block;
 }
 .blog_item_arrow {
   margin-left: 15px;
@@ -737,7 +729,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .info_item.head {
-  max-width: 470px;
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 400;
@@ -759,7 +750,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Red Hat Display";
-  font-weight: 600;
+  font-weight: 400;
   font-size: 28px;
   line-height: 166%;
   letter-spacing: 0.1em;
@@ -799,7 +790,6 @@ body {
           justify-content: space-between;
   font-family: "Lato";
   font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 166%;
   letter-spacing: 0.1em;
@@ -821,7 +811,6 @@ body {
 .description {
   font-family: "Lato";
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 166%;
   letter-spacing: 0.05em;
@@ -1006,6 +995,17 @@ body {
   display: inline-block;
 }
 
+.footer .blog.name_title {
+  padding-bottom: 10px;
+}
+
+.footer .blog_item_link {
+  -webkit-transform: translate(-15px, -10px);
+      -ms-transform: translate(-15px, -10px);
+          transform: translate(-15px, -10px);
+  display: inline-block;
+}
+
 .footer_item.item {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
@@ -1172,6 +1172,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .blog.name_title {
+    font-size: 32px;
+  }
   .blog_item_maxw {
     padding-top: 0;
     max-width: 100%;
@@ -1183,6 +1186,9 @@ body {
   }
   .blog_item_date {
     margin-bottom: 35px;
+  }
+  .blog_item_arrow {
+    margin-left: 5px;
   }
   .posts .item {
     margin: 0 0px;
@@ -1252,6 +1258,10 @@ body {
 }
 
 @media (max-width: 767px) {
+  .intro-title {
+    font-size: 32px;
+    line-height: 1.6;
+  }
   .blog_item_image {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -1263,6 +1273,36 @@ body {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
     max-width: 100%;
+  }
+  .posts {
+    padding: 0 0 50px;
+  }
+  .popular_row .item {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding: 0 15px;
+  }
+  .popular_item.head {
+    font-size: 18px;
+  }
+  .info {
+    padding: 0 0 35px;
+  }
+  .popular_row .info_item p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .info_item.head {
+    font-size: 18px;
+  }
+  .info_max-w {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .name_title {
+    font-size: 22px;
   }
 }
 
@@ -1289,12 +1329,5 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .popular_row .item {
-    max-width: 100%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
-    padding: 0 15px;
   }
 }

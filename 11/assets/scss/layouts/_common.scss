@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Red Hat Display';
-    font-weight: 600;
+    font-weight: 400;
     font-size: 28px;
     line-height: 166%;
     letter-spacing: 0.1em;
@@ -37,6 +37,9 @@ body {
     line-height: 166%;
     letter-spacing: 0.1em;
     color: #000000;
+    @include media ('<768px'){
+        font-size: 22px;
+    }
 }
 
 .date {
