@@ -444,10 +444,6 @@ html {
           box-sizing: inherit;
 }
 
-* {
-  max-height: 1000000px;
-}
-
 body {
   color: #333;
   background: #fff;
@@ -460,7 +456,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  background-position: center;
 }
 
 .gm-style img {
@@ -504,13 +499,13 @@ h1, h2, h3, h4, h5, h6 {
   padding: 150px 0 145px;
   background: #F6F6F6;
 }
-.about__block__name {
+.about__block_name {
   max-width: 570px;
   margin: 0 auto;
   padding-bottom: 55px;
   position: relative;
 }
-.about__block__name:before {
+.about__block_name:before {
   content: "";
   position: absolute;
   height: 4px;
@@ -561,14 +556,14 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 25%;
   padding: 0 15px;
 }
-.card__list.list .list__item__card__block {
+.card__list.list .list__item_card-block {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
   width: 100%;
   height: 270px;
 }
-.card__list.list .list__item__card__block:hover .sub__menu {
+.card__list.list .list__item_card-block:hover .sub__menu {
   opacity: 1;
   visibility: visible;
   -webkit-transform: translate(0, 0);
@@ -578,7 +573,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: 0.9s;
   transition: 0.9s;
 }
-.card__list.list .list__item__card__block img {
+.card__list.list .list__item_card-block img {
   display: block;
   height: 100%;
   -o-object-fit: cover;
@@ -588,7 +583,7 @@ h1, h2, h3, h4, h5, h6 {
      object-position: top;
 }
 
-.list__item__card__name p {
+.list__item_card-name p {
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
@@ -596,7 +591,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 22px;
   color: #282528;
 }
-.list__item__card__name span {
+.list__item_card-name span {
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
@@ -633,13 +628,13 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
 }
-.social__list__item:not(:last-child) {
+.social__list_item:not(:last-child) {
   margin-right: 5px;
 }
-.social__list__item a {
+.social__list_item a {
   display: inline-block;
 }
-.social__list__item span {
+.social__list_item span {
   display: inline-block;
   padding: 5px;
   background-color: #5DCBE6;
@@ -648,7 +643,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: color 0.5s ease-in;
   transition: color 0.5s ease-in;
 }
-.social__list__item span:hover {
+.social__list_item span:hover {
   color: #5a5353;
 }
 
@@ -911,7 +906,7 @@ footer .logo {
     padding-bottom: 20px;
     overflow: hidden;
   }
-  .about .card__list.list .list__item__card__block {
+  .about .card__list.list .list__item_card-block {
     position: relative;
     margin-bottom: 20px;
     height: 38vw;
@@ -919,7 +914,13 @@ footer .logo {
 }
 
 @media (max-width: 859px) {
+  .header__button {
+    margin-right: 50px;
+  }
   .menu__list .list__item a {
+    font-size: 14px;
+  }
+  .btn {
     font-size: 14px;
   }
   .burger-wrap {
@@ -930,6 +931,8 @@ footer .logo {
         -ms-flex-order: 1;
             order: 1;
     margin-left: 16px;
+    position: absolute;
+    right: 20px;
   }
   .header-menu .menu__list {
     visibility: hidden;
@@ -939,14 +942,15 @@ footer .logo {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     padding: 50px;
-    position: absolute;
+    position: fixed;
     left: 0;
-    top: 100%;
+    top: 16%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+    height: 100%;
     z-index: 100;
     background-color: #fff;
   }
@@ -989,24 +993,10 @@ footer .logo {
   .about__subtitle {
     font-size: 14px;
   }
-  .burger-active .about {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-            transform: translate(0, 0);
-    -webkit-transition: 0.9s;
-    -o-transition: 0.9s;
-    transition: 0.9s;
-    -webkit-box-shadow: 0 3px 16px #0009;
-            box-shadow: 0 3px 16px #0009;
-    border-bottom: 2px solid #18B5DC;
-    border-top: 2px solid #18B5DC;
-  }
-  .list__item__card__name p {
+  .list__item_card-name p {
     font-size: 14px;
   }
-  .list__item__card__name span {
+  .list__item_card-name span {
     font-size: 16px;
   }
   footer .footer-content .menu__list {
@@ -1039,7 +1029,7 @@ footer .logo {
             flex: 100%;
     max-width: 100%;
   }
-  .about .card__list.list .list__item__card__block {
+  .about .card__list.list .list__item_card-block {
     position: relative;
     margin-bottom: 20px;
     height: 70vw;

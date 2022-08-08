@@ -507,7 +507,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .intro-title {
   font-family: "Red Hat Display";
-  font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 64px;
@@ -631,8 +630,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .view {
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.1em;
@@ -686,8 +683,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 50px;
 }
 .popular_button .btn {
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 166%;
@@ -712,8 +707,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .popular_row .info_item p {
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 32px;
@@ -730,7 +723,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .info_item.head {
   font-family: "Red Hat Display";
-  font-style: normal;
   font-weight: 400;
   font-size: 23px;
   line-height: 166%;
@@ -749,7 +741,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  font-family: "Red Hat Display";
+  font-family: "Lato";
   font-weight: 400;
   font-size: 28px;
   line-height: 166%;
@@ -788,8 +780,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: "Lato";
-  font-style: normal;
   font-size: 12px;
   line-height: 166%;
   letter-spacing: 0.1em;
@@ -799,7 +789,6 @@ body {
 
 .head {
   font-family: "Red Hat Display";
-  font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 166%;
@@ -809,8 +798,6 @@ body {
 }
 
 .description {
-  font-family: "Lato";
-  font-style: normal;
   font-size: 16px;
   line-height: 166%;
   letter-spacing: 0.05em;
@@ -1059,8 +1046,6 @@ body {
 
 .footer_copyright {
   text-align: center;
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 166%;
@@ -1275,7 +1260,10 @@ body {
     max-width: 100%;
   }
   .posts {
-    padding: 0 0 50px;
+    padding: 0 0 30px;
+  }
+  .popular {
+    padding: 0 0 30px;
   }
   .popular_row .item {
     max-width: 100%;

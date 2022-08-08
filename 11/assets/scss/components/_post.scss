@@ -1,7 +1,7 @@
 .posts {
     padding: 0 0 110px;
     @include media ('<768px'){
-        padding: 0 0 50px;
+        padding: 0 0 30px;
     }
     .item {
         padding: 0 15px;
@@ -63,8 +63,6 @@
 }
 
 .view {
-    font-family: "Lato";
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.1em;

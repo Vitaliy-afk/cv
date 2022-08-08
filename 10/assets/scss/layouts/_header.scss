@@ -12,6 +12,9 @@
         margin-top: -5px;
         flex: 1;
         text-align: right;
+        @include media ('<860px'){
+            margin-right: 50px;
+        }
     }
 }
 
@@ -27,7 +30,6 @@
         text-transform: uppercase;
         flex-wrap: wrap;
         .list {
-           
             &__item {
                 a {
                     font-family: 'Lato';
@@ -73,5 +75,8 @@
     &:hover {
         background-color: #18B5DC;
         color: $white;
+    }
+    @include media ('<860px'){
+        font-size: 14px;
     }
 }

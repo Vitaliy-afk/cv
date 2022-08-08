@@ -9,11 +9,12 @@
             transform: translate(0, -100%);
             flex-wrap: nowrap;
             padding: 50px;
-            position: absolute;
+            position: fixed;
             left: 0;
-            top: 100%;
+            top: 16%;
             flex-direction: column;
             width: 100%;
+            height: 100%;
             z-index: 100;
             background-color: $white;
             .list {
@@ -69,17 +70,7 @@
         }
        
     }
-    .burger-active & {
-        @include media('<860px'){
-            opacity: 1;
-            visibility: visible;
-            transform: translate(0, 0);
-            transition: 0.9s;
-            box-shadow: 0 3px 16px #0009;
-            border-bottom: 2px solid #18B5DC;
-            border-top: 2px solid #18B5DC;
-        }
-    }
+    
    
 }
 
@@ -93,7 +84,7 @@
                     max-width: 50%;
                     padding-bottom: 20px;
                     overflow: hidden;
-                    &__card__block {
+                    &_card-block {
                         position: relative;
                         margin-bottom: 20px;
                         height: 38vw;
@@ -109,8 +100,7 @@
                 .list__item {
                     flex: 100%;
                     max-width: 100%;
-                    // padding: 0 15px;
-                    &__card__block {
+                    &_card-block {
                         position: relative;
                         margin-bottom: 20px;
                         height: 70vw;
@@ -124,7 +114,7 @@
    
 }
 @include media ('<860px'){
-    .list__item__card__name {
+    .list__item_card-name {
         p {
             font-size: 14px;
         }

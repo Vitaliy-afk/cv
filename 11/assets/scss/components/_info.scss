@@ -8,8 +8,6 @@
 .popular_row {
     .info_item {
         p {
-            font-family: 'Lato';
-            font-style: normal;
             font-weight: 400;
             font-size: 19px;
             line-height: 32px;
@@ -34,7 +32,6 @@
     &.head {
             @extend %hyphens;
             font-family: 'Red Hat Display';
-            font-style: normal;
             font-weight: 400;
             font-size: 23px;
             line-height: 166%;
