@@ -775,6 +775,9 @@ body {
   -ms-flex-negative: 1;
       flex-shrink: 1;
 }
+.header-menu ul:nth-child(2) a:hover {
+  text-decoration: underline;
+}
 .header-menu ul:nth-child(3) {
   margin-left: 60px;
 }
