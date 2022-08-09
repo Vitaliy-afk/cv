@@ -67,18 +67,7 @@
         }
        
     }
-    .burger-active & {
-        @include media('<860px'){
-            opacity: 1;
-            visibility: visible;
-            transform: translate(0, 0);
-            transition: 0.9s;
-            box-shadow: 0 3px 16px #0009;
-            border-bottom: 2px solid #18B5DC;
-            border-top: 2px solid #18B5DC;
-            // padding-top: 250px;
-        }
-    }
+    
    
 }
 

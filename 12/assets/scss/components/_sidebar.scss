@@ -1,15 +1,197 @@
+
+
+
 .sidebar {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
     background: #fff;
-    width: 280px;
     overflow: hidden;
+    overflow-y: auto;
     z-index: 10000;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
-    max-width: 220px;
+    width: 220px;
+    height: 100%;
+    transition: width .3s ease-in-out;
+    .sub-menu & {
+        width: 100px;
+    }
     
     
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    padding:  15px;
+}
+
+.logo {
+    flex-shrink: 0;
+    margin-right: 10px;
+    svg {
+        &.open  {
+            display: block;
+            .sub-menu & {
+                display: none;
+            }
+        }
+        &.close {
+            display: none;
+            .sub-menu & {
+                display: block;
+            }
+        }
+        
+    }
+}
+
+.click {
+    svg {
+        transition: transform .5s ease-in-out;
+        .sub-menu & {
+            transform: rotate(180deg);
+        }
+    }
+    
+}
+
+.sidebar-list-heading {
+    padding: 15px;
+    &::before {
+        content: '---';
+        display: none;
+        .sub-menu & {
+            display: block;
+        }
+    }
+    .heading-text {
+        font-size: 16px;
+        line-height: 20px;
+        color: #828282;
+        text-transform: uppercase;
+        .sub-menu & {
+            display: none;
+        }
+    }
+    
+}
+
+.sidebar-nav-item {
+    margin-bottom: 10px;
+}
+
+.sidebar-list {
+    @extend %listreset;
+    display: flex;
+    flex-direction: column;
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #4F4F4F;
+        padding: 10px 15px 10px;
+        transition: background-color .3s ease-in-out, color .3s ease-in-out;
+        position: relative;
+        &:hover {
+            background-color:  #9E8CFC;
+            color: $white;
+            svg {
+                path {
+                    fill: $white;
+                }
+            }
+        }
+        svg {
+            flex-shrink: 0;
+            margin-right: 10px;
+            path {
+                transition: fill .3s ease-in-out;
+            }
+        }
+        
+       
+        
+    }
+    .text {
+        max-width: 150px;
+        overflow: visible;
+        transition: max-width .3s ease-in-out;
+        white-space: nowrap;
+        .sub-menu & {
+            max-width: 0;
+            overflow: hidden;
+        }
+    }
+}
+
+
+.sidebar-list {
+    li {
+        &:nth-child(1) {
+            a {
+                .notification {
+                    position: relative;
+                    font-size: 12px;
+                    transform: translate(-15px, -10px);
+                    z-index: 10;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 20px;
+                        width: 20px;
+                        background-color: #6FCF97;
+                        border-radius: 12px;
+                        left: -3px;
+                        top: 1px;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+        &:nth-child(2) {
+            a {
+                .notification {
+                    color: $white;
+                    position: relative;
+                    font-size: 12px;
+                    transform: translate(-15px, -10px);
+                    z-index: 10;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 20px;
+                        width: 20px;
+                        background: #EA5455;
+                        border-radius: 12px;
+                        left: -3px;
+                        top: 1px;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+        &:nth-child(3) {
+            a {
+                .notification {
+                    position: relative;
+                    font-size: 12px;
+                    transform: translate(-15px, -10px);
+                    z-index: 10;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 20px;
+                        width: 20px;
+                        background: #c49d34;
+                        border-radius: 12px;
+                        left: -3px;
+                        top: 1px;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
 }
