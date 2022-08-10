@@ -634,63 +634,39 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-.sidebar-list li:nth-child(1) a .notification {
+.icon-wrap {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   position: relative;
-  font-size: 12px;
-  -webkit-transform: translate(-15px, -10px);
-      -ms-transform: translate(-15px, -10px);
-          transform: translate(-15px, -10px);
-  z-index: 10;
 }
-.sidebar-list li:nth-child(1) a .notification::after {
-  content: "";
+.icon-wrap .notification {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  left: 0;
+  top: 1px;
+  -webkit-transform: translate(15px, -10px);
+      -ms-transform: translate(15px, -10px);
+          transform: translate(15px, -10px);
+  z-index: 10;
   height: 20px;
   width: 20px;
   background-color: #6FCF97;
   border-radius: 12px;
-  left: -3px;
-  top: 1px;
-  z-index: -1;
 }
-.sidebar-list li:nth-child(2) a .notification {
-  color: #fff;
-  position: relative;
-  font-size: 12px;
-  -webkit-transform: translate(-15px, -10px);
-      -ms-transform: translate(-15px, -10px);
-          transform: translate(-15px, -10px);
-  z-index: 10;
+.icon-wrap .notification.red {
+  background-color: #EA5455;
 }
-.sidebar-list li:nth-child(2) a .notification::after {
-  content: "";
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  background: #EA5455;
-  border-radius: 12px;
-  left: -3px;
-  top: 1px;
-  z-index: -1;
-}
-.sidebar-list li:nth-child(3) a .notification {
-  position: relative;
-  font-size: 12px;
-  -webkit-transform: translate(-15px, -10px);
-      -ms-transform: translate(-15px, -10px);
-          transform: translate(-15px, -10px);
-  z-index: 10;
-}
-.sidebar-list li:nth-child(3) a .notification::after {
-  content: "";
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  background: #c49d34;
-  border-radius: 12px;
-  left: -3px;
-  top: 1px;
-  z-index: -1;
+.icon-wrap .notification.yellow {
+  background-color: #c49d34;
 }
 
 #wrapper {
