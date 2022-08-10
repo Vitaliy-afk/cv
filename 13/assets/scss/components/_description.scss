@@ -1,0 +1,22 @@
+.description {
+    padding: 0 0 90px;
+    &_block_text {
+        max-width: 570px;
+    }
+    &-text {
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: #565656;
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+        @include media ('<768px'){
+            font-size: 16px;
+        }
+    }
+}
+
