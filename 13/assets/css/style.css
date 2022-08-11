@@ -875,7 +875,7 @@ body {
     padding: 50px;
     position: fixed;
     left: 0;
-    top: 100px;
+    top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
