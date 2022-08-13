@@ -64,14 +64,14 @@ section {
                 width: 100%;
                 background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
                 border-radius: 20px;
-                opacity: 0;
+                opacity: 1;
                 transition: opacity .3s ease-in, visibility .3s ease-in;
-                visibility: hidden;
+                visibility: visible;
             }
             &:hover {
                 &::before {
-                    opacity: 1;
-                    visibility: visible;
+                    opacity: 0;
+                    visibility: hidden;
                 }
             }
         }

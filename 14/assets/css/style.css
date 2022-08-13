@@ -731,15 +731,15 @@ section:nth-child(3) {
   background: -o-linear-gradient(bottom, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
   background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
   border-radius: 20px;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
   -o-transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
   transition: opacity 0.3s ease-in, visibility 0.3s ease-in;
-  visibility: hidden;
+  visibility: visible;
 }
 .gallery > div a.fancy:hover::before {
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
 }
 .gallery > div img {
   -o-object-fit: cover;
