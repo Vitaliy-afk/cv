@@ -1,0 +1,156 @@
+
+
+@import "./base/breakpoints";
+@import "./vendors/include-media";
+@import "./vendors/normalize";
+@import "./vendors/fonts";
+
+
+
+@import "./base/mixins";
+@import "./base/variables";
+@import "./base/reset";
+
+
+
+
+@import "./base/forms";
+@import "./base/helpers";
+
+// @import "./layouts/header";
+@import "./layouts/common";
+// @import "./layouts/footer";
+
+
+$front_img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/82473/bicycle-card.jpg';
+$kos_img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/82473/k-os.jpg';
+$qod_img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/82473/q-od.jpg';
+$joh_img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/82473/j-oh.jpg';
+$koc_img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/82473/k-oc.jpg';
+$qos_img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/82473/q-os.jpg';
+$jod_img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/82473/j-od.jpg';
+$transition_duration: 1s;
+
+body {  
+  background-color: #004d00;
+
+}
+
+li, .front, .back {
+  width: 100%;
+  height: 100%; 
+}
+ul {
+  display: flex;
+  @extend %listreset;
+  margin: 0 -15px;
+  padding: 25px 0px 25px;
+  
+  
+}
+
+li {
+  perspective: 600px; 
+  @extend %listreset;
+  flex: 0 0 calc(100% / 6);
+  max-width: calc(100% / 6);
+  padding: 15px 15px;
+  &:hover {
+    .wrapper {
+      transform: rotateY(180deg); 
+    }
+  }
+  
+  &:nth-child(1) .back {
+    background: url($kos_img) 0 0 no-repeat;  
+  }
+  
+  &:nth-child(2) .back {  
+    background: url($qod_img) 0 0 no-repeat;  
+  }
+  
+  &:nth-child(3) .back { 
+    background: url($joh_img) 0 0 no-repeat;  
+  }
+  
+  &:nth-child(4) .back {
+    background: url($koc_img) 0 0 no-repeat;  
+  }
+  
+  &:nth-child(5) .back {  
+    background: url($qos_img) 0 0 no-repeat;  
+  }
+  
+  &:nth-child(6) .back {  
+    background: url($jod_img) 0 0 no-repeat;  
+  }
+}
+
+.wrapper {
+  position: relative;
+  transition: all $transition_duration;
+  transform-style: preserve-3d;
+  padding-top: 140%;
+}
+
+.front, .back {
+  position: absolute;
+  backface-visibility: hidden;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  top: 0;
+  left: 0;
+}
+
+.front, .back {
+  z-index: 3;
+  background: url($front_img) 0 0 no-repeat;  
+  transform: rotateY(0deg);
+  background-size: contain !important;
+}
+
+.back {
+  transform: rotateY(180deg); 
+}
+
+
+
+
+
+.flipped {
+  .front {
+    animation: front-circle 2s ease-in-out forwards;
+  }
+  .back {
+    animation: back-circle 2s ease-in-out forwards;
+    
+  }
+}
+
+
+@keyframes front-circle {
+    0% {
+        transform: rotateY(0deg); 
+    }
+    50% {
+      transform: rotateY(180deg);    
+    }
+    100% {
+        transform: rotateY(0deg);    
+    }
+}
+
+
+@keyframes back-circle {
+    0% {
+        transform: rotateY(180deg);    
+    }
+    50% {
+      transform: rotateY(0deg);    
+    }
+    100% {
+        transform: rotateY(180deg);    
+    }
+}
+
+

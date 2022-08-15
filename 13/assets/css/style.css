@@ -541,7 +541,6 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Lato";
-  font-weight: 400;
   font-size: 28px;
   line-height: 166%;
   letter-spacing: 0.1em;
@@ -553,13 +552,6 @@ body {
   padding-right: 15px;
   margin: 0 auto;
   max-width: 1200px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .intro-title.title {
@@ -859,9 +851,6 @@ body {
     right: 20px;
     visibility: visible;
     z-index: 999;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
     margin-left: 16px;
     top: 25px;
   }
