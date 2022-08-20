@@ -1492,6 +1492,8 @@ figure {
   display: -ms-flexbox;
   display: flex;
   padding: 0 15px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .footer-col.left ul:not(:last-child) {
   padding-right: 100px;
