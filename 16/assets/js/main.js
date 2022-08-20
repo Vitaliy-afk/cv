@@ -53,7 +53,7 @@ function initSlickSlider() {
 
   jQuery('.about-slider').slick({
   infinite: true,
-  speed: 300,
+  speed: 1000,
   slidesToShow: 6,
   slidesToScroll: 1,
   arrows: true,
