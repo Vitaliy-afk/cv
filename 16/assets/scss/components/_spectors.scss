@@ -1,0 +1,115 @@
+.spectors {
+    padding: 270px 0 255px;
+    @include media ('<=480px'){
+        padding: 200px 0 100px;
+        
+    }
+    .container {
+        max-width: 1670px;
+    }
+    h3 {
+        text-align: center
+    }
+}
+
+.spectors-list {
+    @extend %listreset;
+    display: flex;
+    margin: 0 -10px;
+    flex-wrap: wrap;
+    
+    
+    li {
+        max-width: calc(100% / 3);
+        flex: calc(100% / 3);
+        padding: 10px;
+        margin-bottom: 80px;
+        @include media ('<=1024px'){
+            max-width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        @include media ('<=480px'){
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 20px;
+            
+        }
+        
+    }
+}
+
+
+.head-text {
+    margin-bottom: 13px;
+    @include media ('<=1024px'){
+        text-align: center;
+    }
+}
+.spectors-block {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    @include media ('<=1024px'){
+        
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .spectors-img {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        max-width: 30%;
+        padding-left: 40px;
+        transform: translate(0px, 30px);
+        @include media ('<=1024px'){
+            padding-left: 0px;
+        }
+        
+    }
+    .spectors-text {
+        flex: 0 0 70%;
+        max-width: 70%;
+        padding-left: 20px;
+        @include media ('<=1024px'){
+            padding-top: 20px;
+            padding-left: 0;
+            text-align: center;
+        }
+        
+        p {
+            max-width: 300px;
+        }
+    }
+    
+}
+
+.spectors {
+    h3 {
+        margin-bottom: 100px;
+    }
+}
+
+.spectors-text {
+    font-family: 'Futura New';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+
+/* brown */
+
+color: #59443F;
+min-width: 318px;
+    @include media ('<=768px'){
+        font-size: 16px;
+    }
+}

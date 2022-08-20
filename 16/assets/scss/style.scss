@@ -1,0 +1,34 @@
+
+
+@import "./base/breakpoints";
+@import "./vendors/include-media";
+@import "./vendors/normalize";
+@import "./vendors/fonts";
+@import "./vendors/slick";
+
+
+
+
+@import "./base/mixins";
+@import "./base/variables";
+@import "./base/reset";
+
+
+@import "./base/forms";
+@import "./base/helpers";
+
+@import "./components/hero";
+@import "./components/cards";
+@import "./components/about";
+@import "./components/prof";
+@import "./components/spectors";
+@import "./components/contined";
+@import "./components/contacts";
+
+
+@import "./layouts/header";
+@import "./layouts/common";
+@import "./layouts/footer";
+@import "./layouts/burger";
+
+

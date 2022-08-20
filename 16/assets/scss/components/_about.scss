@@ -1,0 +1,113 @@
+.about {
+    padding: 180px 0 105px;
+    background-color: #FBF8F8;
+    @include media ('<=1024px'){
+        padding: 80px 0 50px;
+    }
+    &-text {
+        max-width: 480px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Futura New';
+        font-size: 20px;
+        margin-bottom: 100px;
+       
+        p {
+            line-height: 30px;
+            color: #59443F;
+            text-align: initial;
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.title-block {
+    font-family: 'SchoolBook';
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #080606;
+    font-weight: 400;
+    margin-bottom: 55px;
+    letter-spacing: 0.2rem;
+}
+
+.about {
+    .slider-title {
+        font-family: 'SchoolBook';
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            color: #080606;
+            font-weight: 400;
+            margin-bottom: 45px;
+            letter-spacing: 0.2rem;
+
+    }
+}
+
+.read-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        font-weight: 700;
+        line-height: 20px;
+        color: #FFC59E;
+        
+        display: inline-flex;
+        align-items: center;
+        font-size: 20px;
+        text-transform: uppercase;
+
+    }
+}
+
+
+.about-slider {
+    margin-bottom: 10px;
+    position: relative;
+    max-width: 1135px;
+    margin: 33px auto;
+    .slick-track {
+        display: flex;
+    }
+}
+
+
+
+
+.about button.slick-prev.slick-arrow {
+    outline: none;
+}
+
+
+
+.about .slick-arrow {
+    z-index: 2;
+    position: absolute;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border-radius: 50%;
+    background-color: #FFC59E;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.2);
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about .slick-arrow.slick-prev {
+    background-image: url('../image/arrow-prev.png');
+    top: 40%;
+    left: -5%;
+    
+  
+}
+.about .slick-arrow.slick-next {
+    background-image: url('../image/arrow-next.png');
+    top: 40%;
+    right: -5%;
+   
+}

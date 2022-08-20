@@ -1,0 +1,136 @@
+.footer {
+    background-color: #59443F;
+    padding: 50px 0 50px;
+    .logo {
+        display: flex;
+        align-items: center;
+       
+    }
+}
+
+.head-name {
+    font-family: 'SchoolBook';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 46px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.head-text {
+    font-family: 'Futura New';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+/* identical to box height, or 100% */
+
+
+color: #FFFFFF;
+}
+
+.head-logo_text {
+    margin-left: 20px;
+}
+
+.footer-row {
+    display: flex;
+    @extend %listreset;
+    color: $white;
+    @include media ('<=1024px'){
+        display: block;
+        justify-content: center;
+    }
+}
+
+.footer-col {
+    &.left {
+        max-width: 75%;
+        flex: 0 0 75%;
+        display: flex;
+        padding: 0 15px;
+        @include media ('<=1024px'){
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        @include media ('<=640px'){
+           flex-direction: column;
+           
+        }
+        ul {
+            &:not(:last-child){
+                padding-right: 100px;
+            }
+            @include media ('<=1024px'){
+                &:not(:last-child){
+                    padding-right: 100px;
+                }
+            }
+        }
+    }
+    p {
+        max-width: 192px;
+        padding-right: 100px;
+    }
+   
+    &.right {
+        max-width: 50%;
+        flex: 0 0 50%;
+        padding: 0 15px;
+        @include media ('<=1024px'){
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+    ul {
+        
+        @extend %listreset;
+        li {
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+
+.footer {
+    .social-list {
+        @extend %listreset;
+        display: flex;
+        align-items: center;
+        @include media ('<=1024px'){
+           justify-content: center;
+        }
+        li {
+            @include media ('<=1024px'){
+                &:not(:last-child){
+                    padding-right: 20px;
+                }
+            }
+            &:not(:last-child){
+                padding-right: 50px;
+            }
+            a {
+                
+                span {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #af755e;
+                    width: 40px;
+                    height: 40px;
+                    padding: 10px;
+                    border-radius: 20px;
+                    font-size: 22px;
+                    color: #FFFFFF;
+                    transition: background-color .3s ease-in-out;
+                    &:hover {
+                        background-color: #5a5857;
+                    }
+                }
+               
+            }
+        }
+    }
+}

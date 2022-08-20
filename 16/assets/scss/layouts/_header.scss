@@ -1,0 +1,148 @@
+.header {
+    padding: 65px 0 100px 0;
+    @include media ('<860px'){
+        padding: 25px 0 60px 0;
+    }
+    position: relative;
+    .menu-list {
+        @include media ('<860px'){
+            visibility: hidden;
+            flex-wrap: nowrap;
+            padding: 50px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            flex-direction: column;
+            z-index: 100;
+            background-color: #fff;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+            transition: transform 0.9s;
+            transform: translate(0, -100%);
+            
+        }
+        .menu-item {
+            @include media ('<860px'){
+                a {
+                    font-weight: 700;
+                    &:hover {
+                        background-color: #cfa186;
+                    } 
+                }
+                &:not(:last-child){
+                    padding-right: 0;
+                }
+            }
+        }
+        
+    }
+    .menu-list  {
+        .burger-active & {
+            @include media('<860px'){
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0, 0);
+                box-shadow: 0 3px 16px #0009;
+                
+            }
+        }
+    }
+}
+    
+    
+
+    
+
+
+.header-top {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex-shrink: 0;
+    a {
+        display: inline-block;
+    }
+}
+
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+.menu-list {
+    display: flex;
+    @extend %listreset;
+    margin: 0 0px 0 235px;
+    @include media ('<=1280px'){
+        margin: 0 0px 0 50px;
+    }
+    a {
+        font-family: 'FuturaNew';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        color: #C3B9B5;
+        text-transform: uppercase;
+        @include media ('<=1125px'){
+            font-size: 14px
+        }
+        @include media ('<=860px'){
+            font-size: 20px
+        }
+    }
+    .menu-item {
+        &:not(:last-child){
+            padding-right: 80px;
+            
+            @include media ('<=1680px'){
+                padding-right: 20px;
+            }
+            @include media ('<=1024px'){
+                padding-right: 10px;
+            }
+        }
+    }
+    
+}
+
+
+
+
+.location {
+    flex-shrink: 0;
+    font-family: 'FuturaNew';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFC59E;
+    text-transform: uppercase;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    p {
+        display: inline-block;
+        margin: 0 0 0 15px;
+    }
+    a {
+        display: flex;
+        margin-left: 10px;
+        align-items: center;
+        color: #FFC59E;
+        @include media('<860px'){
+            margin-right: 100px;
+            
+        }
+    }
+   
+
+}

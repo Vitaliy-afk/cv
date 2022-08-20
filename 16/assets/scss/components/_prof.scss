@@ -1,0 +1,54 @@
+.prof {
+    padding: 395px 0 200px;
+    @include media ('<=1024px'){
+        padding: 100px 0 50px;
+    }
+}
+
+.title {
+    max-width: 716px;
+    margin: 0 auto;
+    position: relative;
+    h4 {
+        font-family: 'SchoolBook';
+        font-weight: 700;
+        font-size: 144px;
+        line-height: 110px;
+        color: #59443F;
+        margin-bottom: 40px;
+        @include media ('<=1024px'){
+            font-size: 80px;
+            text-align: center;
+        }
+    }
+    p {
+        font-family: 'Futura New';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 1.4;
+        color: #080606;
+        margin: 0;
+        @include media ('<=1024px'){
+            font-size: 40px;
+            text-align: center;
+            line-height: 1.0;
+        }
+    }
+    figure {
+        position: absolute;
+        bottom: -45%;
+        margin: 0;
+        right: 40px;
+        @include media ('<=1024px'){
+            
+            top: 80%;
+            right: 0;
+        }
+        @include media ('<=1024px'){
+            
+            top: 100%;
+            right: 0;
+        }
+    }
+}
