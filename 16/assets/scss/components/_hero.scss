@@ -1,7 +1,7 @@
 .hero {
     padding: 35px 0 60px;
     @include media ('<=1024px'){
-        padding: 35px 0 250px;
+        padding: 35px 0 50px;
     }
     position: relative;
     // .slick-list {
@@ -49,7 +49,7 @@
                 display: flex;
                 flex-direction: column;
             }
-            @include media ('<=1800px'){
+            @include media ('<=1366px'){
                 max-width: 100px;
                 margin: 0 0 0 100px;
                 

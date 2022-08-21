@@ -81,7 +81,11 @@
     outline: none;
 }
 
-
+.about {
+    img {
+        border-radius: 50%;
+    }
+}
 
 .about .slick-arrow {
     z-index: 2;
