@@ -1,0 +1,61 @@
+.performance-section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 225px 0 115px;
+    object-fit: cover;
+    background-attachment: scroll;
+    @include media ('<=768px'){
+        padding: 20px 0 20px;
+    }
+    &_card {
+        background: rgba(35, 35, 35, 0.9);
+        max-width: 100%;
+        color: #FFFFFF;
+        padding: 44px 32px;
+        font-size: 20px;
+        @include media ('>=769px'){
+            max-width: 646px;
+        }
+        &.mod {
+           margin-left: auto;
+           @include media ('<=768px'){
+            margin-left: 0;
+        }
+        }
+        h5 {
+            margin-bottom: 10px;
+        }
+        h4 {
+            
+            margin-bottom: 20px;
+        }
+        .text {
+            max-width: 550px;
+            font-size: 16px;
+            line-height: calc(28 / 16);
+            margin-bottom: 14px;
+        }
+        .btn {
+            padding: 20px 57px;
+        }
+        
+       
+    }
+}
+
+h5 {
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+h4 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(28 / 20)
+  
+}

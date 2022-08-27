@@ -1,0 +1,55 @@
+.footer {
+    background-color: #000000;
+    padding: 83px 0 100px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        width: 168px;
+    }
+    p {
+        font-family: 'Josefin Sans';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: calc(20 / 14);
+        letter-spacing: 0.2em;
+    }
+}
+
+
+.social-list {
+    display: flex;
+    @extend %listreset;
+    align-items: center;
+    li {
+        &:not(:last-child){
+            padding-right: 35px;
+        }
+        a {
+            color: #FFFFFF;
+            font-size: 28px;
+            span {
+                &:hover {
+                   color: #5373FD;
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+// #wrapper {
+//     overflow: hidden;
+// }
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    max-width: 1350px;
+}
+
+body {
+    font-family: 'Josefin Sans', Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+    line-height: calc(28 / 16);
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+figure {
+    margin: 0;
+}
+
