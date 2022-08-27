@@ -757,6 +757,7 @@ h2, .text {
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: 100%;
+  outline: none;
   color: black;
 }
 .intro-section form input::-webkit-input-placeholder {
