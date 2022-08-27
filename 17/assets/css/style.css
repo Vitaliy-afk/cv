@@ -757,6 +757,7 @@ h2, .text {
       -ms-flex-positive: 1;
           flex-grow: 1;
   width: 100%;
+  color: black;
 }
 .search-section form input::-webkit-input-placeholder {
   font-family: "Josefin Sans";
@@ -811,6 +812,12 @@ h2, .text {
       -ms-flex-align: center;
           align-items: center;
   line-height: 1.4285714286;
+  -webkit-transition: background-color 0.3s ease-in;
+  -o-transition: background-color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
+}
+.search-section form button:hover {
+  background-color: #2e3f8b;
 }
 .search-section form button .icon-search {
   margin-right: 10px;
@@ -1208,6 +1215,18 @@ svg {
   color: #FFFFFF;
   font-size: 14px;
 }
+.menu-list .menu-item {
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  -o-transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+.menu-list .menu-item:hover {
+  -webkit-transform: scaleX(1.1);
+      -ms-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
 .menu-list .menu-item:not(:last-child) {
   padding-right: 40px;
 }
@@ -1279,6 +1298,11 @@ figure {
 .social-list li a {
   color: #FFFFFF;
   font-size: 28px;
+}
+.social-list li a span {
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
 }
 .social-list li a span:hover {
   color: #5373FD;

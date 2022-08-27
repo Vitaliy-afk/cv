@@ -103,6 +103,10 @@ svg {
     color: #FFFFFF;
     font-size: 14px;
     .menu-item {
+        transition: transform .3s ease-in;
+        &:hover {
+            transform: scaleX(1.1);
+        }
         &:not(:last-child){
             padding-right: 40px;
             @include media('<=768px'){
@@ -117,6 +121,8 @@ svg {
         a {
             line-height: calc(20 / 14);
             color: #FFFFFF;
+            
+            
         }
     }
 }
