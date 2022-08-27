@@ -89,3 +89,11 @@
 	}
 }
 // //*******************//
+
+
+body {
+	&.burger-active {
+		height: 100vh;
+		overflow: hidden;
+	}
+}
