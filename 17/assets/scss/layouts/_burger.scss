@@ -3,8 +3,6 @@
 .burger-wrap {
 	visibility: hidden;
 	order: 1;
-	right: 25px;
-	top: 0;
 	// top: 17%;
 	// left: 0;
 	// text-align: right;
@@ -22,22 +20,22 @@
 }
 
 
-.head-menu {
-	@include media ('<576px'){
-		visibility: hidden;
-		transform: translate(-100%, 0);
+// .head-menu {
+// 	@include media ('<576px'){
+// 		visibility: hidden;
+// 		transform: translate(-100%, 0);
 
-	}
-	.burger-active & {
-		@include media('<576px'){
-            opacity: 1;
-			visibility: visible;
-			transform: translate(0, 0);
-    		transition: 0.9s;
-			// box-shadow: 0 3px 16px #0009;
-		}
-	}
-}
+// 	}
+// 	.burger-active & {
+// 		@include media('<576px'){
+//             opacity: 1;
+// 			visibility: visible;
+// 			transform: translate(0, 0);
+//     		transition: 0.9s;
+// 			// box-shadow: 0 3px 16px #0009;
+// 		}
+// 	}
+// }
 
 
 .burger {

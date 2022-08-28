@@ -1325,8 +1325,6 @@ figure {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  right: 25px;
-  top: 0;
 }
 
 .burger {
@@ -1598,24 +1596,5 @@ body.burger-active {
     display: inline-block;
     visibility: visible;
     z-index: 999;
-  }
-}
-
-@media (max-width: 575px) {
-  .head-menu {
-    visibility: hidden;
-    -webkit-transform: translate(-100%, 0);
-        -ms-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-  }
-  .burger-active .head-menu {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: translate(0, 0);
-        -ms-transform: translate(0, 0);
-            transform: translate(0, 0);
-    -webkit-transition: 0.9s;
-    -o-transition: 0.9s;
-    transition: 0.9s;
   }
 }
