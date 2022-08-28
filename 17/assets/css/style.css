@@ -824,6 +824,15 @@ h2, .text {
   margin-right: 10px;
 }
 
+h1 {
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.0833333333;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
 .scroll-down {
   font-family: "Josefin Sans";
   text-align: center;
@@ -1002,16 +1011,6 @@ h2 {
 }
 .steps-section_link:nth-child(3) span:hover:before {
   color: #1b9da7;
-}
-
-.cloud {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: auto;
-  z-index: 2;
-  opacity: 0.8;
 }
 
 .performance-section {
