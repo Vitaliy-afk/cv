@@ -1269,6 +1269,10 @@ figure {
   margin: 0;
 }
 
+blockquote {
+  margin: 0;
+}
+
 .footer {
   background-color: #000000;
   padding: 83px 0 100px;
