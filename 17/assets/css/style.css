@@ -722,9 +722,6 @@ h2, .text {
   max-width: 675px;
   width: 100%;
   text-align: center;
-  -webkit-transform: translateX(6px);
-      -ms-transform: translateX(6px);
-          transform: translateX(6px);
   position: relative;
 }
 .intro-section_text {
