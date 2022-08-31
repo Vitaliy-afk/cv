@@ -1176,6 +1176,16 @@ h4 {
   transition: 0.2s;
 }
 
+::-moz-selection {
+  background-color: #5397fd;
+  color: aliceblue;
+}
+
+::selection {
+  background-color: #5397fd;
+  color: aliceblue;
+}
+
 .header {
   padding: 30px 0;
   background-color: #5373FD;
@@ -1295,6 +1305,7 @@ blockquote {
   font-size: 14px;
   line-height: 1.4285714286;
   letter-spacing: 0.2em;
+  color: #FFFFFF;
 }
 
 .social-list {
@@ -1505,9 +1516,6 @@ body.burger-active {
   }
   .reviews-section_block .col:nth-child(2) {
     max-width: 100%;
-  }
-  .scroll-up {
-    display: none;
   }
   .header-top {
     -webkit-box-orient: vertical;

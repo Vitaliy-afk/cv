@@ -25,9 +25,7 @@
         justify-content: center;
         content: '\2191';
     }
-    @include media ('<=768px'){
-        display: none;
-    }
+   
 }
 
 .scroll-up--active {
@@ -48,4 +46,9 @@
     stroke: $black;
     stroke-width: 4px;
     transition: .2s;
+}
+
+::selection {
+    background-color: #5397fd;
+    color: aliceblue;
 }
