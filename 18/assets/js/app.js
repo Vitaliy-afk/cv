@@ -39,6 +39,7 @@ surname = 'Zubarev';
 name2 = 'Igor';
 surname2 = 'Yalobenko';
 
+console.log('name', 'surname', 'name2', 'surname2')
 
 // let 1name, 1surname, one-name, one-surname, 3name; 
 
@@ -55,11 +56,16 @@ alert(`Ваш рік народження ${dateBirthday}`);
 let currentYear = 2022
 let age = dateBirthday - currentYear
 
-if (typeof age === 'string' && age.length === 0) {
-   console.log('string is empty');
- } else {
-   console.log('string is NOT empty')
- }
+
+ 
+if (typeof age === 'string') {
+    console.log('Variable is a string');
+}
+else {
+    console.log('Variable is not a string');
+}
+
+
 
 console.log(age)
 
